@@ -1,0 +1,535 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2022.3">
+  <Nodes>
+    <Node ToolID="14">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="113" y="77" width="1043" height="367" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Container 30</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="1">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="138" y="149" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <CachedCosmeticName />
+              <File FileFormat="23" RecordLimit="100">aka:Real-Engineering-Connection|||select stg_iowa_liquor_products_alteryx.* 
+from stg_iowa_liquor_products_alteryx</File>
+              <FormatSpecificOptions>
+                <SingleRowFetch>False</SingleRowFetch>
+                <ReadCentroids>False</ReadCentroids>
+                <TableStyle>Quoted</TableStyle>
+                <CacheData>False</CacheData>
+                <SessionReadOnly>True</SessionReadOnly>
+                <ReadUncommitted>False</ReadUncommitted>
+                <NoProgress>True</NoProgress>
+                <PostSQL />
+                <PreSQLOnConfig>True</PreSQLOnConfig>
+                <PreSQL />
+              </FormatSpecificOptions>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>aka:Real-Engineering-Connection
+Query=select stg_iowa_liquor_produ...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Product_SK" source="File: odbc:DRIVER={ODBC Driver 17 for SQL Server};UID=iowa;PWD=__EncPwd1__;DATABASE=Iowa_Liquor_Sales-alteryx;SERVER=100.71.4.111|||select stg_iowa_liquor_products_alteryx.* &#xA;from stg_iowa_liquor_products_alteryx" type="Int32" />
+                <Field name="Report Date" size="10" source="File: odbc:DRIVER={ODBC Driver 17 for SQL Server};UID=iowa;PWD=__EncPwd1__;DATABASE=Iowa_Liquor_Sales-alteryx;SERVER=100.71.4.111|||select stg_iowa_liquor_products_alteryx.* &#xA;from stg_iowa_liquor_products_alteryx" type="String" />
+                <Field name="Item Number" source="File: odbc:DRIVER={ODBC Driver 17 for SQL Server};UID=iowa;PWD=__EncPwd1__;DATABASE=Iowa_Liquor_Sales-alteryx;SERVER=100.71.4.111|||select stg_iowa_liquor_products_alteryx.* &#xA;from stg_iowa_liquor_products_alteryx" type="Int32" />
+                <Field name="Category Name" size="36" source="File: odbc:DRIVER={ODBC Driver 17 for SQL Server};UID=iowa;PWD=__EncPwd1__;DATABASE=Iowa_Liquor_Sales-alteryx;SERVER=100.71.4.111|||select stg_iowa_liquor_products_alteryx.* &#xA;from stg_iowa_liquor_products_alteryx" type="V_String" />
+                <Field name="Item Description" size="60" source="File: odbc:DRIVER={ODBC Driver 17 for SQL Server};UID=iowa;PWD=__EncPwd1__;DATABASE=Iowa_Liquor_Sales-alteryx;SERVER=100.71.4.111|||select stg_iowa_liquor_products_alteryx.* &#xA;from stg_iowa_liquor_products_alteryx" type="V_WString" />
+                <Field name="Vendor" size="3" source="File: odbc:DRIVER={ODBC Driver 17 for SQL Server};UID=iowa;PWD=__EncPwd1__;DATABASE=Iowa_Liquor_Sales-alteryx;SERVER=100.71.4.111|||select stg_iowa_liquor_products_alteryx.* &#xA;from stg_iowa_liquor_products_alteryx" type="String" />
+                <Field name="Vendor Name" size="60" source="File: odbc:DRIVER={ODBC Driver 17 for SQL Server};UID=iowa;PWD=__EncPwd1__;DATABASE=Iowa_Liquor_Sales-alteryx;SERVER=100.71.4.111|||select stg_iowa_liquor_products_alteryx.* &#xA;from stg_iowa_liquor_products_alteryx" type="V_String" />
+                <Field name="Bottle Volume (ml)" source="File: odbc:DRIVER={ODBC Driver 17 for SQL Server};UID=iowa;PWD=__EncPwd1__;DATABASE=Iowa_Liquor_Sales-alteryx;SERVER=100.71.4.111|||select stg_iowa_liquor_products_alteryx.* &#xA;from stg_iowa_liquor_products_alteryx" type="Int16" />
+                <Field name="Pack" source="File: odbc:DRIVER={ODBC Driver 17 for SQL Server};UID=iowa;PWD=__EncPwd1__;DATABASE=Iowa_Liquor_Sales-alteryx;SERVER=100.71.4.111|||select stg_iowa_liquor_products_alteryx.* &#xA;from stg_iowa_liquor_products_alteryx" type="Int16" />
+                <Field name="Inner Pack" source="File: odbc:DRIVER={ODBC Driver 17 for SQL Server};UID=iowa;PWD=__EncPwd1__;DATABASE=Iowa_Liquor_Sales-alteryx;SERVER=100.71.4.111|||select stg_iowa_liquor_products_alteryx.* &#xA;from stg_iowa_liquor_products_alteryx" type="Int16" />
+                <Field name="Age" source="File: odbc:DRIVER={ODBC Driver 17 for SQL Server};UID=iowa;PWD=__EncPwd1__;DATABASE=Iowa_Liquor_Sales-alteryx;SERVER=100.71.4.111|||select stg_iowa_liquor_products_alteryx.* &#xA;from stg_iowa_liquor_products_alteryx" type="Int16" />
+                <Field name="Proof" source="File: odbc:DRIVER={ODBC Driver 17 for SQL Server};UID=iowa;PWD=__EncPwd1__;DATABASE=Iowa_Liquor_Sales-alteryx;SERVER=100.71.4.111|||select stg_iowa_liquor_products_alteryx.* &#xA;from stg_iowa_liquor_products_alteryx" type="Int16" />
+                <Field name="List Date" size="10" source="File: odbc:DRIVER={ODBC Driver 17 for SQL Server};UID=iowa;PWD=__EncPwd1__;DATABASE=Iowa_Liquor_Sales-alteryx;SERVER=100.71.4.111|||select stg_iowa_liquor_products_alteryx.* &#xA;from stg_iowa_liquor_products_alteryx" type="String" />
+                <Field name="UPC" source="File: odbc:DRIVER={ODBC Driver 17 for SQL Server};UID=iowa;PWD=__EncPwd1__;DATABASE=Iowa_Liquor_Sales-alteryx;SERVER=100.71.4.111|||select stg_iowa_liquor_products_alteryx.* &#xA;from stg_iowa_liquor_products_alteryx" type="Int64" />
+                <Field name="SCC" source="File: odbc:DRIVER={ODBC Driver 17 for SQL Server};UID=iowa;PWD=__EncPwd1__;DATABASE=Iowa_Liquor_Sales-alteryx;SERVER=100.71.4.111|||select stg_iowa_liquor_products_alteryx.* &#xA;from stg_iowa_liquor_products_alteryx" type="Int64" />
+                <Field name="State Bottle Cost" source="File: odbc:DRIVER={ODBC Driver 17 for SQL Server};UID=iowa;PWD=__EncPwd1__;DATABASE=Iowa_Liquor_Sales-alteryx;SERVER=100.71.4.111|||select stg_iowa_liquor_products_alteryx.* &#xA;from stg_iowa_liquor_products_alteryx" type="Double" />
+                <Field name="State Case Cost" source="File: odbc:DRIVER={ODBC Driver 17 for SQL Server};UID=iowa;PWD=__EncPwd1__;DATABASE=Iowa_Liquor_Sales-alteryx;SERVER=100.71.4.111|||select stg_iowa_liquor_products_alteryx.* &#xA;from stg_iowa_liquor_products_alteryx" type="Double" />
+                <Field name="State Bottle Retail" source="File: odbc:DRIVER={ODBC Driver 17 for SQL Server};UID=iowa;PWD=__EncPwd1__;DATABASE=Iowa_Liquor_Sales-alteryx;SERVER=100.71.4.111|||select stg_iowa_liquor_products_alteryx.* &#xA;from stg_iowa_liquor_products_alteryx" type="Double" />
+                <Field name="DI_CreateDate" source="File: odbc:DRIVER={ODBC Driver 17 for SQL Server};UID=iowa;PWD=__EncPwd1__;DATABASE=Iowa_Liquor_Sales-alteryx;SERVER=100.71.4.111|||select stg_iowa_liquor_products_alteryx.* &#xA;from stg_iowa_liquor_products_alteryx" type="DateTime" />
+                <Field name="DI_WorkflowFileName" size="256" source="File: odbc:DRIVER={ODBC Driver 17 for SQL Server};UID=iowa;PWD=__EncPwd1__;DATABASE=Iowa_Liquor_Sales-alteryx;SERVER=100.71.4.111|||select stg_iowa_liquor_products_alteryx.* &#xA;from stg_iowa_liquor_products_alteryx" type="V_WString" />
+                <Field name="DI_WorkflowDirectory" size="256" source="File: odbc:DRIVER={ODBC Driver 17 for SQL Server};UID=iowa;PWD=__EncPwd1__;DATABASE=Iowa_Liquor_Sales-alteryx;SERVER=100.71.4.111|||select stg_iowa_liquor_products_alteryx.* &#xA;from stg_iowa_liquor_products_alteryx" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="2">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="258" y="150" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Report Date" selected="True" />
+                <SelectField field="Item Number" selected="True" />
+                <SelectField field="Item Description" selected="True" />
+                <SelectField field="Vendor" selected="True" type="Int32" size="4" />
+                <SelectField field="Bottle Volume (ml)" selected="True" />
+                <SelectField field="Pack" selected="True" />
+                <SelectField field="Inner Pack" selected="True" />
+                <SelectField field="Age" selected="True" />
+                <SelectField field="Proof" selected="True" />
+                <SelectField field="List Date" selected="True" />
+                <SelectField field="UPC" selected="True" />
+                <SelectField field="SCC" selected="True" />
+                <SelectField field="State Bottle Cost" selected="True" />
+                <SelectField field="State Case Cost" selected="True" />
+                <SelectField field="State Bottle Retail" selected="True" />
+                <SelectField field="DI_CreateDate" selected="True" />
+                <SelectField field="DI_WorkflowFileName" selected="True" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="3">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.RecordID.RecordID">
+            <Position x="762" y="186" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FieldName>Item_SK</FieldName>
+              <StartValue>1</StartValue>
+              <FieldType>Int32</FieldType>
+              <FieldSize>6</FieldSize>
+              <Position>0</Position>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRecordID" />
+        </Node>
+        <Node ToolID="4">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="858" y="186" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="True" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Item_SK" selected="True" />
+                <SelectField field="Item Number" selected="True" rename="Item_Number" />
+                <SelectField field="Item Description" selected="True" rename="Item_Description" type="V_String" size="80" />
+                <SelectField field="Category_SK" selected="True" />
+                <SelectField field="Vendor_SK" selected="True" />
+                <SelectField field="Bottle Volume (ml)" selected="True" rename="Bottle_Volume_ml" type="Int32" size="4" />
+                <SelectField field="Pack" selected="True" type="Int32" size="4" />
+                <SelectField field="Inner Pack" selected="True" rename="Inner_Pack" type="Int32" size="4" />
+                <SelectField field="Age" selected="True" type="Int32" size="4" />
+                <SelectField field="Proof" selected="True" type="Int32" size="4" />
+                <SelectField field="List_Date" selected="True" />
+                <SelectField field="UPC" selected="True" />
+                <SelectField field="SCC" selected="True" />
+                <SelectField field="State Bottle Cost" selected="True" rename="State_Bottle_Cost" />
+                <SelectField field="State Case Cost" selected="True" rename="State_Case_Cost" />
+                <SelectField field="State Bottle Retail" selected="True" rename="State_Bottle_Retail" />
+                <SelectField field="Report_Date" selected="True" />
+                <SelectField field="DI_WorkflowFileName" selected="True" rename="DI_JobID" />
+                <SelectField field="DI_CreateDate" selected="True" />
+                <SelectField field="Category_Number" selected="False" rename="Category_SK" />
+                <SelectField field="Vendor_Number" selected="False" rename="Vendor_SK" />
+                <SelectField field="Vendor" selected="False" />
+                <SelectField field="*Unknown" selected="False" />
+                <SelectField field="List Date" selected="False" type="Date" size="10" />
+                <SelectField field="Report Date" selected="False" rename="Report_Date" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="5">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+            <Position x="534" y="162" />
+          </GuiSettings>
+          <Properties>
+            <Configuration joinByRecordPos="False">
+              <JoinInfo connection="Left">
+                <Field field="Item Number" />
+              </JoinInfo>
+              <JoinInfo connection="Right">
+                <Field field="Category_Number" />
+              </JoinInfo>
+              <SelectConfiguration>
+                <Configuration outputConnection="Join">
+                  <OrderChanged value="False" />
+                  <CommaDecimal value="False" />
+                  <SelectFields>
+                    <SelectField field="*Unknown" selected="True" />
+                  </SelectFields>
+                </Configuration>
+              </SelectConfiguration>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+        </Node>
+        <Node ToolID="6">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="366" y="234" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <CachedCosmeticName />
+              <File FileFormat="23" RecordLimit="">aka:Real-Engineering-Connection|||select Dim_Iowa_Liquor_Product_Categories.Category_Number,
+	Dim_Iowa_Liquor_Product_Categories.Category_SK 
+from Dim_Iowa_Liquor_Product_Categories</File>
+              <FormatSpecificOptions>
+                <SingleRowFetch>False</SingleRowFetch>
+                <ReadCentroids>False</ReadCentroids>
+                <TableStyle>Quoted</TableStyle>
+                <CacheData>False</CacheData>
+                <SessionReadOnly>True</SessionReadOnly>
+                <ReadUncommitted>False</ReadUncommitted>
+                <NoProgress>True</NoProgress>
+                <PostSQL />
+                <PreSQLOnConfig>True</PreSQLOnConfig>
+                <PreSQL />
+              </FormatSpecificOptions>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>aka:Real-Engineering-Connection
+Query=select Dim_Iowa_Liquor_Produ...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Category_Number" source="File: odbc:DRIVER={ODBC Driver 17 for SQL Server};UID=iowa;PWD=__EncPwd1__;DATABASE=Iowa_Liquor_Sales-alteryx;SERVER=100.71.4.111|||select Dim_Iowa_Liquor_Product_Categories.Category_Number,&#xA;	Dim_Iowa_Liquor_Product_Categories.Category_SK &#xA;from Dim_Iowa_Liquor_Product_Categories" type="Int32" />
+                <Field name="Category_SK" source="File: odbc:DRIVER={ODBC Driver 17 for SQL Server};UID=iowa;PWD=__EncPwd1__;DATABASE=Iowa_Liquor_Sales-alteryx;SERVER=100.71.4.111|||select Dim_Iowa_Liquor_Product_Categories.Category_Number,&#xA;	Dim_Iowa_Liquor_Product_Categories.Category_SK &#xA;from Dim_Iowa_Liquor_Product_Categories" type="Int32" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="7">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+            <Position x="666" y="174" />
+          </GuiSettings>
+          <Properties>
+            <Configuration joinByRecordPos="False">
+              <JoinInfo connection="Left">
+                <Field field="Vendor" />
+              </JoinInfo>
+              <JoinInfo connection="Right">
+                <Field field="Vendor_Number" />
+              </JoinInfo>
+              <SelectConfiguration>
+                <Configuration outputConnection="Join">
+                  <OrderChanged value="False" />
+                  <CommaDecimal value="False" />
+                  <SelectFields>
+                    <SelectField field="*Unknown" selected="True" />
+                  </SelectFields>
+                </Configuration>
+              </SelectConfiguration>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+        </Node>
+        <Node ToolID="8">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="546" y="234" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <CachedCosmeticName />
+              <File FileFormat="23" RecordLimit="">aka:Real-Engineering-Connection|||select Dim_Iowa_Liquor_Vendors.Vendor_Number,
+	Dim_Iowa_Liquor_Vendors.Vendor_SK 
+from Dim_Iowa_Liquor_Vendors</File>
+              <FormatSpecificOptions>
+                <SingleRowFetch>False</SingleRowFetch>
+                <ReadCentroids>False</ReadCentroids>
+                <TableStyle>Quoted</TableStyle>
+                <CacheData>False</CacheData>
+                <SessionReadOnly>True</SessionReadOnly>
+                <ReadUncommitted>False</ReadUncommitted>
+                <NoProgress>True</NoProgress>
+                <PostSQL />
+                <PreSQLOnConfig>True</PreSQLOnConfig>
+                <PreSQL />
+              </FormatSpecificOptions>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>aka:Real-Engineering-Connection
+Query=select Dim_Iowa_Liquor_Vendo...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Vendor_Number" source="File: odbc:DRIVER={ODBC Driver 17 for SQL Server};UID=iowa;PWD=__EncPwd1__;DATABASE=Iowa_Liquor_Sales-alteryx;SERVER=100.71.4.111|||select Dim_Iowa_Liquor_Vendors.Vendor_Number,&#xA;	Dim_Iowa_Liquor_Vendors.Vendor_SK &#xA;from Dim_Iowa_Liquor_Vendors" type="Int32" />
+                <Field name="Vendor_SK" source="File: odbc:DRIVER={ODBC Driver 17 for SQL Server};UID=iowa;PWD=__EncPwd1__;DATABASE=Iowa_Liquor_Sales-alteryx;SERVER=100.71.4.111|||select Dim_Iowa_Liquor_Vendors.Vendor_Number,&#xA;	Dim_Iowa_Liquor_Vendors.Vendor_SK &#xA;from Dim_Iowa_Liquor_Vendors" type="Int32" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="9">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="918" y="126" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\Skudli\AppData\Local\Temp\Engine_77104_0819758871922a4e863a7d46598504fe_\Engine_77104_4ca122585b5c4c4f9510dd4474a2de19~.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Profile</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="11">
+          <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+            <Position x="977" y="209" width="154" height="210" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Caption>Container 32</Caption>
+              <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+              <Disabled value="True" />
+              <Folded value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <ChildNodes>
+            <Node ToolID="10">
+              <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+                <Position x="1002" y="258" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <File MaxRecords="" FileFormat="23">aka:Real-Engineering-Connection|||Dim_Iowa_Liquor_Products</File>
+                  <Passwords />
+                  <CachedCosmeticName />
+                  <Disable>False</Disable>
+                  <FormatSpecificOptions>
+                    <TransactionMessages>False</TransactionMessages>
+                    <Geometry>True</Geometry>
+                    <Projection />
+                    <IgnoreDropTableSQLErrors>False</IgnoreDropTableSQLErrors>
+                    <SpatialObjSize>8000</SpatialObjSize>
+                    <OutputOption>Delete</OutputOption>
+                    <PostSQL />
+                    <TransactionSize>10000</TransactionSize>
+                    <TableStyle>Quoted</TableStyle>
+                    <PreSQL />
+                  </FormatSpecificOptions>
+                  <MultiFile value="False" />
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText>aka:Real-Engineering-Connection
+Query=Dim_Iowa_Liquor_Products</DefaultAnnotationText>
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+              <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+            </Node>
+          </ChildNodes>
+        </Node>
+        <Node ToolID="12">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DateTime.DateTime">
+            <Position x="354" y="150" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <IsFrom value="False" />
+              <InputFieldName>Report Date</InputFieldName>
+              <Language>English</Language>
+              <Format>MM/dd/yyyy</Format>
+              <OutputFieldName>Report_Date</OutputFieldName>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Convert Report Date From:
+MM/dd/yyyy</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDateTime" />
+        </Node>
+        <Node ToolID="13">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DateTime.DateTime">
+            <Position x="450" y="150" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <IsFrom value="False" />
+              <InputFieldName>List Date</InputFieldName>
+              <Language>English</Language>
+              <Format>MM/dd/yyyy</Format>
+              <OutputFieldName>List_Date</OutputFieldName>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Convert List Date From:
+MM/dd/yyyy</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDateTime" />
+        </Node>
+      </ChildNodes>
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="2" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="12" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="Output" />
+      <Destination ToolID="4" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="Output" />
+      <Destination ToolID="9" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="Output" />
+      <Destination ToolID="10" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="Join" />
+      <Destination ToolID="7" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="8" Connection="Output" />
+      <Destination ToolID="7" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="6" Connection="Output" />
+      <Destination ToolID="5" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="13" Connection="Output" />
+      <Destination ToolID="5" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="7" Connection="Join" />
+      <Destination ToolID="3" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="12" Connection="Output" />
+      <Destination ToolID="13" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <RunWithE2 value="True" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>iowa_dim_2</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="8cbf37c9-1593-41cb-a4d7-d1a59a9c4167" />
+      <Telemetry>
+        <PreviousWorkflowId value="ecab7bae-269f-40f8-ac5c-c4e1ec5f76e3" />
+        <OriginWorkflowId value="ecab7bae-269f-40f8-ac5c-c4e1ec5f76e3" />
+      </Telemetry>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>

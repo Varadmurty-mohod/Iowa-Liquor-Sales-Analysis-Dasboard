@@ -1,0 +1,596 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2022.3">
+  <Nodes>
+    <Node ToolID="14">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="54" y="54" width="901" height="418" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Container 14</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="True" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="8">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="775" y="103" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\Skudli\AppData\Local\Temp\Engine_46856_16c86c94f64da248ab789c906389f798_\Engine_46856_81432e0e38e24145b5d43ab6ce33ddd5~.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Profile</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="1">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="79" y="126" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <CachedCosmeticName />
+              <File FileFormat="23" RecordLimit="1000">aka:Real-Engineering-Connection|||select stg_iowa_liquor_sales_alteryx.*,
+	stg_iowa_liquor_sales_alteryx.DI_CreateDate as DI_CreateDate1,
+	stg_iowa_liquor_sales_alteryx.DI_WorkflowFileName as DI_WorkflowFileName1,
+	stg_iowa_liquor_sales_alteryx.[Invoice-Item_Number] as [Invoice-Item_Number1],
+	stg_iowa_liquor_sales_alteryx.Store_Number as Store_Number1,
+	stg_iowa_liquor_sales_alteryx.Store_Name as Store_Name1,
+	stg_iowa_liquor_sales_alteryx.Bottles_Sold as Bottles_Sold1,
+	stg_iowa_liquor_sales_alteryx.Sale_Dollars as Sale_Dollars1,
+	stg_iowa_liquor_sales_alteryx.Volume_Sold_Liters as Volume_Sold_Liters1,
+	stg_iowa_liquor_sales_alteryx.Volume_Sold_Gallons as Volume_Sold_Gallons1 
+from stg_iowa_liquor_sales_alteryx</File>
+              <FormatSpecificOptions>
+                <SingleRowFetch>False</SingleRowFetch>
+                <ReadCentroids>False</ReadCentroids>
+                <TableStyle>Quoted</TableStyle>
+                <CacheData>False</CacheData>
+                <SessionReadOnly>True</SessionReadOnly>
+                <ReadUncommitted>False</ReadUncommitted>
+                <NoProgress>True</NoProgress>
+                <PostSQL />
+                <PreSQLOnConfig>True</PreSQLOnConfig>
+                <PreSQL />
+              </FormatSpecificOptions>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>aka:Real-Engineering-Connection
+Query=select stg_iowa_liquor_sales...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Address" size="55" source="File: odbc:DRIVER={ODBC Driver 17 for SQL Server};UID=iowa;PWD=__EncPwd1__;DATABASE=Iowa_Liquor_Sales-alteryx;SERVER=100.71.4.111|||select stg_iowa_liquor_sales_alteryx.*,&#xA;	stg_iowa_liquor_sales_alteryx.DI_CreateDate as DI_CreateDate1,&#xA;	stg_iowa_liquor_sales_alteryx.DI_WorkflowFileName as DI_WorkflowFileName1,&#xA;	stg_iowa_liquor_sales_alteryx.[Invoice-Item_Number] as [Invoice-Item_Number1],&#xA;	stg_iowa_liquor_sales_alteryx.Store_Number as Store_Number1,&#xA;	stg_iowa_liquor_sales_alteryx.Store_Name as Store_Name1,&#xA;	stg_iowa_liquor_sales_alteryx.Bottles_Sold as Bottles_Sold1,&#xA;	stg_iowa_liquor_sales_alteryx.Sale_Dollars as Sale_Dollars1,&#xA;	stg_iowa_liquor_sales_alteryx.Volume_Sold_Liters as Volume_Sold_Liters1,&#xA;	stg_iowa_liquor_sales_alteryx.Volume_Sold_Gallons as Volume_Sold_Gallons1 &#xA;from stg_iowa_liquor_sales_alteryx" type="V_String" />
+                <Field name="City" size="17" source="File: odbc:DRIVER={ODBC Driver 17 for SQL Server};UID=iowa;PWD=__EncPwd1__;DATABASE=Iowa_Liquor_Sales-alteryx;SERVER=100.71.4.111|||select stg_iowa_liquor_sales_alteryx.*,&#xA;	stg_iowa_liquor_sales_alteryx.DI_CreateDate as DI_CreateDate1,&#xA;	stg_iowa_liquor_sales_alteryx.DI_WorkflowFileName as DI_WorkflowFileName1,&#xA;	stg_iowa_liquor_sales_alteryx.[Invoice-Item_Number] as [Invoice-Item_Number1],&#xA;	stg_iowa_liquor_sales_alteryx.Store_Number as Store_Number1,&#xA;	stg_iowa_liquor_sales_alteryx.Store_Name as Store_Name1,&#xA;	stg_iowa_liquor_sales_alteryx.Bottles_Sold as Bottles_Sold1,&#xA;	stg_iowa_liquor_sales_alteryx.Sale_Dollars as Sale_Dollars1,&#xA;	stg_iowa_liquor_sales_alteryx.Volume_Sold_Liters as Volume_Sold_Liters1,&#xA;	stg_iowa_liquor_sales_alteryx.Volume_Sold_Gallons as Volume_Sold_Gallons1 &#xA;from stg_iowa_liquor_sales_alteryx" type="V_String" />
+                <Field name="Zip_Code" size="5" source="File: odbc:DRIVER={ODBC Driver 17 for SQL Server};UID=iowa;PWD=__EncPwd1__;DATABASE=Iowa_Liquor_Sales-alteryx;SERVER=100.71.4.111|||select stg_iowa_liquor_sales_alteryx.*,&#xA;	stg_iowa_liquor_sales_alteryx.DI_CreateDate as DI_CreateDate1,&#xA;	stg_iowa_liquor_sales_alteryx.DI_WorkflowFileName as DI_WorkflowFileName1,&#xA;	stg_iowa_liquor_sales_alteryx.[Invoice-Item_Number] as [Invoice-Item_Number1],&#xA;	stg_iowa_liquor_sales_alteryx.Store_Number as Store_Number1,&#xA;	stg_iowa_liquor_sales_alteryx.Store_Name as Store_Name1,&#xA;	stg_iowa_liquor_sales_alteryx.Bottles_Sold as Bottles_Sold1,&#xA;	stg_iowa_liquor_sales_alteryx.Sale_Dollars as Sale_Dollars1,&#xA;	stg_iowa_liquor_sales_alteryx.Volume_Sold_Liters as Volume_Sold_Liters1,&#xA;	stg_iowa_liquor_sales_alteryx.Volume_Sold_Gallons as Volume_Sold_Gallons1 &#xA;from stg_iowa_liquor_sales_alteryx" type="String" />
+                <Field name="DI_CreateDate" source="File: odbc:DRIVER={ODBC Driver 17 for SQL Server};UID=iowa;PWD=__EncPwd1__;DATABASE=Iowa_Liquor_Sales-alteryx;SERVER=100.71.4.111|||select stg_iowa_liquor_sales_alteryx.*,&#xA;	stg_iowa_liquor_sales_alteryx.DI_CreateDate as DI_CreateDate1,&#xA;	stg_iowa_liquor_sales_alteryx.DI_WorkflowFileName as DI_WorkflowFileName1,&#xA;	stg_iowa_liquor_sales_alteryx.[Invoice-Item_Number] as [Invoice-Item_Number1],&#xA;	stg_iowa_liquor_sales_alteryx.Store_Number as Store_Number1,&#xA;	stg_iowa_liquor_sales_alteryx.Store_Name as Store_Name1,&#xA;	stg_iowa_liquor_sales_alteryx.Bottles_Sold as Bottles_Sold1,&#xA;	stg_iowa_liquor_sales_alteryx.Sale_Dollars as Sale_Dollars1,&#xA;	stg_iowa_liquor_sales_alteryx.Volume_Sold_Liters as Volume_Sold_Liters1,&#xA;	stg_iowa_liquor_sales_alteryx.Volume_Sold_Gallons as Volume_Sold_Gallons1 &#xA;from stg_iowa_liquor_sales_alteryx" type="DateTime" />
+                <Field name="DI_WorkflowFileName" size="256" source="File: odbc:DRIVER={ODBC Driver 17 for SQL Server};UID=iowa;PWD=__EncPwd1__;DATABASE=Iowa_Liquor_Sales-alteryx;SERVER=100.71.4.111|||select stg_iowa_liquor_sales_alteryx.*,&#xA;	stg_iowa_liquor_sales_alteryx.DI_CreateDate as DI_CreateDate1,&#xA;	stg_iowa_liquor_sales_alteryx.DI_WorkflowFileName as DI_WorkflowFileName1,&#xA;	stg_iowa_liquor_sales_alteryx.[Invoice-Item_Number] as [Invoice-Item_Number1],&#xA;	stg_iowa_liquor_sales_alteryx.Store_Number as Store_Number1,&#xA;	stg_iowa_liquor_sales_alteryx.Store_Name as Store_Name1,&#xA;	stg_iowa_liquor_sales_alteryx.Bottles_Sold as Bottles_Sold1,&#xA;	stg_iowa_liquor_sales_alteryx.Sale_Dollars as Sale_Dollars1,&#xA;	stg_iowa_liquor_sales_alteryx.Volume_Sold_Liters as Volume_Sold_Liters1,&#xA;	stg_iowa_liquor_sales_alteryx.Volume_Sold_Gallons as Volume_Sold_Gallons1 &#xA;from stg_iowa_liquor_sales_alteryx" type="V_WString" />
+                <Field name="DI_WorkflowDirectory" size="256" source="File: odbc:DRIVER={ODBC Driver 17 for SQL Server};UID=iowa;PWD=__EncPwd1__;DATABASE=Iowa_Liquor_Sales-alteryx;SERVER=100.71.4.111|||select stg_iowa_liquor_sales_alteryx.*,&#xA;	stg_iowa_liquor_sales_alteryx.DI_CreateDate as DI_CreateDate1,&#xA;	stg_iowa_liquor_sales_alteryx.DI_WorkflowFileName as DI_WorkflowFileName1,&#xA;	stg_iowa_liquor_sales_alteryx.[Invoice-Item_Number] as [Invoice-Item_Number1],&#xA;	stg_iowa_liquor_sales_alteryx.Store_Number as Store_Number1,&#xA;	stg_iowa_liquor_sales_alteryx.Store_Name as Store_Name1,&#xA;	stg_iowa_liquor_sales_alteryx.Bottles_Sold as Bottles_Sold1,&#xA;	stg_iowa_liquor_sales_alteryx.Sale_Dollars as Sale_Dollars1,&#xA;	stg_iowa_liquor_sales_alteryx.Volume_Sold_Liters as Volume_Sold_Liters1,&#xA;	stg_iowa_liquor_sales_alteryx.Volume_Sold_Gallons as Volume_Sold_Gallons1 &#xA;from stg_iowa_liquor_sales_alteryx" type="V_WString" />
+                <Field name="Sales_SK" source="File: odbc:DRIVER={ODBC Driver 17 for SQL Server};UID=iowa;PWD=__EncPwd1__;DATABASE=Iowa_Liquor_Sales-alteryx;SERVER=100.71.4.111|||select stg_iowa_liquor_sales_alteryx.*,&#xA;	stg_iowa_liquor_sales_alteryx.DI_CreateDate as DI_CreateDate1,&#xA;	stg_iowa_liquor_sales_alteryx.DI_WorkflowFileName as DI_WorkflowFileName1,&#xA;	stg_iowa_liquor_sales_alteryx.[Invoice-Item_Number] as [Invoice-Item_Number1],&#xA;	stg_iowa_liquor_sales_alteryx.Store_Number as Store_Number1,&#xA;	stg_iowa_liquor_sales_alteryx.Store_Name as Store_Name1,&#xA;	stg_iowa_liquor_sales_alteryx.Bottles_Sold as Bottles_Sold1,&#xA;	stg_iowa_liquor_sales_alteryx.Sale_Dollars as Sale_Dollars1,&#xA;	stg_iowa_liquor_sales_alteryx.Volume_Sold_Liters as Volume_Sold_Liters1,&#xA;	stg_iowa_liquor_sales_alteryx.Volume_Sold_Gallons as Volume_Sold_Gallons1 &#xA;from stg_iowa_liquor_sales_alteryx" type="Int32" />
+                <Field name="Invoice-Item_Number" size="16" source="File: odbc:DRIVER={ODBC Driver 17 for SQL Server};UID=iowa;PWD=__EncPwd1__;DATABASE=Iowa_Liquor_Sales-alteryx;SERVER=100.71.4.111|||select stg_iowa_liquor_sales_alteryx.*,&#xA;	stg_iowa_liquor_sales_alteryx.DI_CreateDate as DI_CreateDate1,&#xA;	stg_iowa_liquor_sales_alteryx.DI_WorkflowFileName as DI_WorkflowFileName1,&#xA;	stg_iowa_liquor_sales_alteryx.[Invoice-Item_Number] as [Invoice-Item_Number1],&#xA;	stg_iowa_liquor_sales_alteryx.Store_Number as Store_Number1,&#xA;	stg_iowa_liquor_sales_alteryx.Store_Name as Store_Name1,&#xA;	stg_iowa_liquor_sales_alteryx.Bottles_Sold as Bottles_Sold1,&#xA;	stg_iowa_liquor_sales_alteryx.Sale_Dollars as Sale_Dollars1,&#xA;	stg_iowa_liquor_sales_alteryx.Volume_Sold_Liters as Volume_Sold_Liters1,&#xA;	stg_iowa_liquor_sales_alteryx.Volume_Sold_Gallons as Volume_Sold_Gallons1 &#xA;from stg_iowa_liquor_sales_alteryx" type="String" />
+                <Field name="Date" size="10" source="File: odbc:DRIVER={ODBC Driver 17 for SQL Server};UID=iowa;PWD=__EncPwd1__;DATABASE=Iowa_Liquor_Sales-alteryx;SERVER=100.71.4.111|||select stg_iowa_liquor_sales_alteryx.*,&#xA;	stg_iowa_liquor_sales_alteryx.DI_CreateDate as DI_CreateDate1,&#xA;	stg_iowa_liquor_sales_alteryx.DI_WorkflowFileName as DI_WorkflowFileName1,&#xA;	stg_iowa_liquor_sales_alteryx.[Invoice-Item_Number] as [Invoice-Item_Number1],&#xA;	stg_iowa_liquor_sales_alteryx.Store_Number as Store_Number1,&#xA;	stg_iowa_liquor_sales_alteryx.Store_Name as Store_Name1,&#xA;	stg_iowa_liquor_sales_alteryx.Bottles_Sold as Bottles_Sold1,&#xA;	stg_iowa_liquor_sales_alteryx.Sale_Dollars as Sale_Dollars1,&#xA;	stg_iowa_liquor_sales_alteryx.Volume_Sold_Liters as Volume_Sold_Liters1,&#xA;	stg_iowa_liquor_sales_alteryx.Volume_Sold_Gallons as Volume_Sold_Gallons1 &#xA;from stg_iowa_liquor_sales_alteryx" type="String" />
+                <Field name="Store_Number" size="6" source="File: odbc:DRIVER={ODBC Driver 17 for SQL Server};UID=iowa;PWD=__EncPwd1__;DATABASE=Iowa_Liquor_Sales-alteryx;SERVER=100.71.4.111|||select stg_iowa_liquor_sales_alteryx.*,&#xA;	stg_iowa_liquor_sales_alteryx.DI_CreateDate as DI_CreateDate1,&#xA;	stg_iowa_liquor_sales_alteryx.DI_WorkflowFileName as DI_WorkflowFileName1,&#xA;	stg_iowa_liquor_sales_alteryx.[Invoice-Item_Number] as [Invoice-Item_Number1],&#xA;	stg_iowa_liquor_sales_alteryx.Store_Number as Store_Number1,&#xA;	stg_iowa_liquor_sales_alteryx.Store_Name as Store_Name1,&#xA;	stg_iowa_liquor_sales_alteryx.Bottles_Sold as Bottles_Sold1,&#xA;	stg_iowa_liquor_sales_alteryx.Sale_Dollars as Sale_Dollars1,&#xA;	stg_iowa_liquor_sales_alteryx.Volume_Sold_Liters as Volume_Sold_Liters1,&#xA;	stg_iowa_liquor_sales_alteryx.Volume_Sold_Gallons as Volume_Sold_Gallons1 &#xA;from stg_iowa_liquor_sales_alteryx" type="String" />
+                <Field name="Store_Name" size="58" source="File: odbc:DRIVER={ODBC Driver 17 for SQL Server};UID=iowa;PWD=__EncPwd1__;DATABASE=Iowa_Liquor_Sales-alteryx;SERVER=100.71.4.111|||select stg_iowa_liquor_sales_alteryx.*,&#xA;	stg_iowa_liquor_sales_alteryx.DI_CreateDate as DI_CreateDate1,&#xA;	stg_iowa_liquor_sales_alteryx.DI_WorkflowFileName as DI_WorkflowFileName1,&#xA;	stg_iowa_liquor_sales_alteryx.[Invoice-Item_Number] as [Invoice-Item_Number1],&#xA;	stg_iowa_liquor_sales_alteryx.Store_Number as Store_Number1,&#xA;	stg_iowa_liquor_sales_alteryx.Store_Name as Store_Name1,&#xA;	stg_iowa_liquor_sales_alteryx.Bottles_Sold as Bottles_Sold1,&#xA;	stg_iowa_liquor_sales_alteryx.Sale_Dollars as Sale_Dollars1,&#xA;	stg_iowa_liquor_sales_alteryx.Volume_Sold_Liters as Volume_Sold_Liters1,&#xA;	stg_iowa_liquor_sales_alteryx.Volume_Sold_Gallons as Volume_Sold_Gallons1 &#xA;from stg_iowa_liquor_sales_alteryx" type="V_String" />
+                <Field name="Store_Location" size="45" source="File: odbc:DRIVER={ODBC Driver 17 for SQL Server};UID=iowa;PWD=__EncPwd1__;DATABASE=Iowa_Liquor_Sales-alteryx;SERVER=100.71.4.111|||select stg_iowa_liquor_sales_alteryx.*,&#xA;	stg_iowa_liquor_sales_alteryx.DI_CreateDate as DI_CreateDate1,&#xA;	stg_iowa_liquor_sales_alteryx.DI_WorkflowFileName as DI_WorkflowFileName1,&#xA;	stg_iowa_liquor_sales_alteryx.[Invoice-Item_Number] as [Invoice-Item_Number1],&#xA;	stg_iowa_liquor_sales_alteryx.Store_Number as Store_Number1,&#xA;	stg_iowa_liquor_sales_alteryx.Store_Name as Store_Name1,&#xA;	stg_iowa_liquor_sales_alteryx.Bottles_Sold as Bottles_Sold1,&#xA;	stg_iowa_liquor_sales_alteryx.Sale_Dollars as Sale_Dollars1,&#xA;	stg_iowa_liquor_sales_alteryx.Volume_Sold_Liters as Volume_Sold_Liters1,&#xA;	stg_iowa_liquor_sales_alteryx.Volume_Sold_Gallons as Volume_Sold_Gallons1 &#xA;from stg_iowa_liquor_sales_alteryx" type="V_String" />
+                <Field name="County_Number" size="2" source="File: odbc:DRIVER={ODBC Driver 17 for SQL Server};UID=iowa;PWD=__EncPwd1__;DATABASE=Iowa_Liquor_Sales-alteryx;SERVER=100.71.4.111|||select stg_iowa_liquor_sales_alteryx.*,&#xA;	stg_iowa_liquor_sales_alteryx.DI_CreateDate as DI_CreateDate1,&#xA;	stg_iowa_liquor_sales_alteryx.DI_WorkflowFileName as DI_WorkflowFileName1,&#xA;	stg_iowa_liquor_sales_alteryx.[Invoice-Item_Number] as [Invoice-Item_Number1],&#xA;	stg_iowa_liquor_sales_alteryx.Store_Number as Store_Number1,&#xA;	stg_iowa_liquor_sales_alteryx.Store_Name as Store_Name1,&#xA;	stg_iowa_liquor_sales_alteryx.Bottles_Sold as Bottles_Sold1,&#xA;	stg_iowa_liquor_sales_alteryx.Sale_Dollars as Sale_Dollars1,&#xA;	stg_iowa_liquor_sales_alteryx.Volume_Sold_Liters as Volume_Sold_Liters1,&#xA;	stg_iowa_liquor_sales_alteryx.Volume_Sold_Gallons as Volume_Sold_Gallons1 &#xA;from stg_iowa_liquor_sales_alteryx" type="String" />
+                <Field name="County" size="13" source="File: odbc:DRIVER={ODBC Driver 17 for SQL Server};UID=iowa;PWD=__EncPwd1__;DATABASE=Iowa_Liquor_Sales-alteryx;SERVER=100.71.4.111|||select stg_iowa_liquor_sales_alteryx.*,&#xA;	stg_iowa_liquor_sales_alteryx.DI_CreateDate as DI_CreateDate1,&#xA;	stg_iowa_liquor_sales_alteryx.DI_WorkflowFileName as DI_WorkflowFileName1,&#xA;	stg_iowa_liquor_sales_alteryx.[Invoice-Item_Number] as [Invoice-Item_Number1],&#xA;	stg_iowa_liquor_sales_alteryx.Store_Number as Store_Number1,&#xA;	stg_iowa_liquor_sales_alteryx.Store_Name as Store_Name1,&#xA;	stg_iowa_liquor_sales_alteryx.Bottles_Sold as Bottles_Sold1,&#xA;	stg_iowa_liquor_sales_alteryx.Sale_Dollars as Sale_Dollars1,&#xA;	stg_iowa_liquor_sales_alteryx.Volume_Sold_Liters as Volume_Sold_Liters1,&#xA;	stg_iowa_liquor_sales_alteryx.Volume_Sold_Gallons as Volume_Sold_Gallons1 &#xA;from stg_iowa_liquor_sales_alteryx" type="V_String" />
+                <Field name="Category" source="File: odbc:DRIVER={ODBC Driver 17 for SQL Server};UID=iowa;PWD=__EncPwd1__;DATABASE=Iowa_Liquor_Sales-alteryx;SERVER=100.71.4.111|||select stg_iowa_liquor_sales_alteryx.*,&#xA;	stg_iowa_liquor_sales_alteryx.DI_CreateDate as DI_CreateDate1,&#xA;	stg_iowa_liquor_sales_alteryx.DI_WorkflowFileName as DI_WorkflowFileName1,&#xA;	stg_iowa_liquor_sales_alteryx.[Invoice-Item_Number] as [Invoice-Item_Number1],&#xA;	stg_iowa_liquor_sales_alteryx.Store_Number as Store_Number1,&#xA;	stg_iowa_liquor_sales_alteryx.Store_Name as Store_Name1,&#xA;	stg_iowa_liquor_sales_alteryx.Bottles_Sold as Bottles_Sold1,&#xA;	stg_iowa_liquor_sales_alteryx.Sale_Dollars as Sale_Dollars1,&#xA;	stg_iowa_liquor_sales_alteryx.Volume_Sold_Liters as Volume_Sold_Liters1,&#xA;	stg_iowa_liquor_sales_alteryx.Volume_Sold_Gallons as Volume_Sold_Gallons1 &#xA;from stg_iowa_liquor_sales_alteryx" type="Int32" />
+                <Field name="Category_Name" size="36" source="File: odbc:DRIVER={ODBC Driver 17 for SQL Server};UID=iowa;PWD=__EncPwd1__;DATABASE=Iowa_Liquor_Sales-alteryx;SERVER=100.71.4.111|||select stg_iowa_liquor_sales_alteryx.*,&#xA;	stg_iowa_liquor_sales_alteryx.DI_CreateDate as DI_CreateDate1,&#xA;	stg_iowa_liquor_sales_alteryx.DI_WorkflowFileName as DI_WorkflowFileName1,&#xA;	stg_iowa_liquor_sales_alteryx.[Invoice-Item_Number] as [Invoice-Item_Number1],&#xA;	stg_iowa_liquor_sales_alteryx.Store_Number as Store_Number1,&#xA;	stg_iowa_liquor_sales_alteryx.Store_Name as Store_Name1,&#xA;	stg_iowa_liquor_sales_alteryx.Bottles_Sold as Bottles_Sold1,&#xA;	stg_iowa_liquor_sales_alteryx.Sale_Dollars as Sale_Dollars1,&#xA;	stg_iowa_liquor_sales_alteryx.Volume_Sold_Liters as Volume_Sold_Liters1,&#xA;	stg_iowa_liquor_sales_alteryx.Volume_Sold_Gallons as Volume_Sold_Gallons1 &#xA;from stg_iowa_liquor_sales_alteryx" type="V_String" />
+                <Field name="Vendor_Number" size="3" source="File: odbc:DRIVER={ODBC Driver 17 for SQL Server};UID=iowa;PWD=__EncPwd1__;DATABASE=Iowa_Liquor_Sales-alteryx;SERVER=100.71.4.111|||select stg_iowa_liquor_sales_alteryx.*,&#xA;	stg_iowa_liquor_sales_alteryx.DI_CreateDate as DI_CreateDate1,&#xA;	stg_iowa_liquor_sales_alteryx.DI_WorkflowFileName as DI_WorkflowFileName1,&#xA;	stg_iowa_liquor_sales_alteryx.[Invoice-Item_Number] as [Invoice-Item_Number1],&#xA;	stg_iowa_liquor_sales_alteryx.Store_Number as Store_Number1,&#xA;	stg_iowa_liquor_sales_alteryx.Store_Name as Store_Name1,&#xA;	stg_iowa_liquor_sales_alteryx.Bottles_Sold as Bottles_Sold1,&#xA;	stg_iowa_liquor_sales_alteryx.Sale_Dollars as Sale_Dollars1,&#xA;	stg_iowa_liquor_sales_alteryx.Volume_Sold_Liters as Volume_Sold_Liters1,&#xA;	stg_iowa_liquor_sales_alteryx.Volume_Sold_Gallons as Volume_Sold_Gallons1 &#xA;from stg_iowa_liquor_sales_alteryx" type="String" />
+                <Field name="Vendor_Name" size="67" source="File: odbc:DRIVER={ODBC Driver 17 for SQL Server};UID=iowa;PWD=__EncPwd1__;DATABASE=Iowa_Liquor_Sales-alteryx;SERVER=100.71.4.111|||select stg_iowa_liquor_sales_alteryx.*,&#xA;	stg_iowa_liquor_sales_alteryx.DI_CreateDate as DI_CreateDate1,&#xA;	stg_iowa_liquor_sales_alteryx.DI_WorkflowFileName as DI_WorkflowFileName1,&#xA;	stg_iowa_liquor_sales_alteryx.[Invoice-Item_Number] as [Invoice-Item_Number1],&#xA;	stg_iowa_liquor_sales_alteryx.Store_Number as Store_Number1,&#xA;	stg_iowa_liquor_sales_alteryx.Store_Name as Store_Name1,&#xA;	stg_iowa_liquor_sales_alteryx.Bottles_Sold as Bottles_Sold1,&#xA;	stg_iowa_liquor_sales_alteryx.Sale_Dollars as Sale_Dollars1,&#xA;	stg_iowa_liquor_sales_alteryx.Volume_Sold_Liters as Volume_Sold_Liters1,&#xA;	stg_iowa_liquor_sales_alteryx.Volume_Sold_Gallons as Volume_Sold_Gallons1 &#xA;from stg_iowa_liquor_sales_alteryx" type="V_WString" />
+                <Field name="Item_Number" size="7" source="File: odbc:DRIVER={ODBC Driver 17 for SQL Server};UID=iowa;PWD=__EncPwd1__;DATABASE=Iowa_Liquor_Sales-alteryx;SERVER=100.71.4.111|||select stg_iowa_liquor_sales_alteryx.*,&#xA;	stg_iowa_liquor_sales_alteryx.DI_CreateDate as DI_CreateDate1,&#xA;	stg_iowa_liquor_sales_alteryx.DI_WorkflowFileName as DI_WorkflowFileName1,&#xA;	stg_iowa_liquor_sales_alteryx.[Invoice-Item_Number] as [Invoice-Item_Number1],&#xA;	stg_iowa_liquor_sales_alteryx.Store_Number as Store_Number1,&#xA;	stg_iowa_liquor_sales_alteryx.Store_Name as Store_Name1,&#xA;	stg_iowa_liquor_sales_alteryx.Bottles_Sold as Bottles_Sold1,&#xA;	stg_iowa_liquor_sales_alteryx.Sale_Dollars as Sale_Dollars1,&#xA;	stg_iowa_liquor_sales_alteryx.Volume_Sold_Liters as Volume_Sold_Liters1,&#xA;	stg_iowa_liquor_sales_alteryx.Volume_Sold_Gallons as Volume_Sold_Gallons1 &#xA;from stg_iowa_liquor_sales_alteryx" type="String" />
+                <Field name="Item_Description" size="63" source="File: odbc:DRIVER={ODBC Driver 17 for SQL Server};UID=iowa;PWD=__EncPwd1__;DATABASE=Iowa_Liquor_Sales-alteryx;SERVER=100.71.4.111|||select stg_iowa_liquor_sales_alteryx.*,&#xA;	stg_iowa_liquor_sales_alteryx.DI_CreateDate as DI_CreateDate1,&#xA;	stg_iowa_liquor_sales_alteryx.DI_WorkflowFileName as DI_WorkflowFileName1,&#xA;	stg_iowa_liquor_sales_alteryx.[Invoice-Item_Number] as [Invoice-Item_Number1],&#xA;	stg_iowa_liquor_sales_alteryx.Store_Number as Store_Number1,&#xA;	stg_iowa_liquor_sales_alteryx.Store_Name as Store_Name1,&#xA;	stg_iowa_liquor_sales_alteryx.Bottles_Sold as Bottles_Sold1,&#xA;	stg_iowa_liquor_sales_alteryx.Sale_Dollars as Sale_Dollars1,&#xA;	stg_iowa_liquor_sales_alteryx.Volume_Sold_Liters as Volume_Sold_Liters1,&#xA;	stg_iowa_liquor_sales_alteryx.Volume_Sold_Gallons as Volume_Sold_Gallons1 &#xA;from stg_iowa_liquor_sales_alteryx" type="V_WString" />
+                <Field name="Pack" source="File: odbc:DRIVER={ODBC Driver 17 for SQL Server};UID=iowa;PWD=__EncPwd1__;DATABASE=Iowa_Liquor_Sales-alteryx;SERVER=100.71.4.111|||select stg_iowa_liquor_sales_alteryx.*,&#xA;	stg_iowa_liquor_sales_alteryx.DI_CreateDate as DI_CreateDate1,&#xA;	stg_iowa_liquor_sales_alteryx.DI_WorkflowFileName as DI_WorkflowFileName1,&#xA;	stg_iowa_liquor_sales_alteryx.[Invoice-Item_Number] as [Invoice-Item_Number1],&#xA;	stg_iowa_liquor_sales_alteryx.Store_Number as Store_Number1,&#xA;	stg_iowa_liquor_sales_alteryx.Store_Name as Store_Name1,&#xA;	stg_iowa_liquor_sales_alteryx.Bottles_Sold as Bottles_Sold1,&#xA;	stg_iowa_liquor_sales_alteryx.Sale_Dollars as Sale_Dollars1,&#xA;	stg_iowa_liquor_sales_alteryx.Volume_Sold_Liters as Volume_Sold_Liters1,&#xA;	stg_iowa_liquor_sales_alteryx.Volume_Sold_Gallons as Volume_Sold_Gallons1 &#xA;from stg_iowa_liquor_sales_alteryx" type="Int16" />
+                <Field name="Bottle_Volume_ml" source="File: odbc:DRIVER={ODBC Driver 17 for SQL Server};UID=iowa;PWD=__EncPwd1__;DATABASE=Iowa_Liquor_Sales-alteryx;SERVER=100.71.4.111|||select stg_iowa_liquor_sales_alteryx.*,&#xA;	stg_iowa_liquor_sales_alteryx.DI_CreateDate as DI_CreateDate1,&#xA;	stg_iowa_liquor_sales_alteryx.DI_WorkflowFileName as DI_WorkflowFileName1,&#xA;	stg_iowa_liquor_sales_alteryx.[Invoice-Item_Number] as [Invoice-Item_Number1],&#xA;	stg_iowa_liquor_sales_alteryx.Store_Number as Store_Number1,&#xA;	stg_iowa_liquor_sales_alteryx.Store_Name as Store_Name1,&#xA;	stg_iowa_liquor_sales_alteryx.Bottles_Sold as Bottles_Sold1,&#xA;	stg_iowa_liquor_sales_alteryx.Sale_Dollars as Sale_Dollars1,&#xA;	stg_iowa_liquor_sales_alteryx.Volume_Sold_Liters as Volume_Sold_Liters1,&#xA;	stg_iowa_liquor_sales_alteryx.Volume_Sold_Gallons as Volume_Sold_Gallons1 &#xA;from stg_iowa_liquor_sales_alteryx" type="Int32" />
+                <Field name="State_Bottle_Cost" source="File: odbc:DRIVER={ODBC Driver 17 for SQL Server};UID=iowa;PWD=__EncPwd1__;DATABASE=Iowa_Liquor_Sales-alteryx;SERVER=100.71.4.111|||select stg_iowa_liquor_sales_alteryx.*,&#xA;	stg_iowa_liquor_sales_alteryx.DI_CreateDate as DI_CreateDate1,&#xA;	stg_iowa_liquor_sales_alteryx.DI_WorkflowFileName as DI_WorkflowFileName1,&#xA;	stg_iowa_liquor_sales_alteryx.[Invoice-Item_Number] as [Invoice-Item_Number1],&#xA;	stg_iowa_liquor_sales_alteryx.Store_Number as Store_Number1,&#xA;	stg_iowa_liquor_sales_alteryx.Store_Name as Store_Name1,&#xA;	stg_iowa_liquor_sales_alteryx.Bottles_Sold as Bottles_Sold1,&#xA;	stg_iowa_liquor_sales_alteryx.Sale_Dollars as Sale_Dollars1,&#xA;	stg_iowa_liquor_sales_alteryx.Volume_Sold_Liters as Volume_Sold_Liters1,&#xA;	stg_iowa_liquor_sales_alteryx.Volume_Sold_Gallons as Volume_Sold_Gallons1 &#xA;from stg_iowa_liquor_sales_alteryx" type="Double" />
+                <Field name="State_Bottle_Retail" source="File: odbc:DRIVER={ODBC Driver 17 for SQL Server};UID=iowa;PWD=__EncPwd1__;DATABASE=Iowa_Liquor_Sales-alteryx;SERVER=100.71.4.111|||select stg_iowa_liquor_sales_alteryx.*,&#xA;	stg_iowa_liquor_sales_alteryx.DI_CreateDate as DI_CreateDate1,&#xA;	stg_iowa_liquor_sales_alteryx.DI_WorkflowFileName as DI_WorkflowFileName1,&#xA;	stg_iowa_liquor_sales_alteryx.[Invoice-Item_Number] as [Invoice-Item_Number1],&#xA;	stg_iowa_liquor_sales_alteryx.Store_Number as Store_Number1,&#xA;	stg_iowa_liquor_sales_alteryx.Store_Name as Store_Name1,&#xA;	stg_iowa_liquor_sales_alteryx.Bottles_Sold as Bottles_Sold1,&#xA;	stg_iowa_liquor_sales_alteryx.Sale_Dollars as Sale_Dollars1,&#xA;	stg_iowa_liquor_sales_alteryx.Volume_Sold_Liters as Volume_Sold_Liters1,&#xA;	stg_iowa_liquor_sales_alteryx.Volume_Sold_Gallons as Volume_Sold_Gallons1 &#xA;from stg_iowa_liquor_sales_alteryx" type="Double" />
+                <Field name="Bottles_Sold" source="File: odbc:DRIVER={ODBC Driver 17 for SQL Server};UID=iowa;PWD=__EncPwd1__;DATABASE=Iowa_Liquor_Sales-alteryx;SERVER=100.71.4.111|||select stg_iowa_liquor_sales_alteryx.*,&#xA;	stg_iowa_liquor_sales_alteryx.DI_CreateDate as DI_CreateDate1,&#xA;	stg_iowa_liquor_sales_alteryx.DI_WorkflowFileName as DI_WorkflowFileName1,&#xA;	stg_iowa_liquor_sales_alteryx.[Invoice-Item_Number] as [Invoice-Item_Number1],&#xA;	stg_iowa_liquor_sales_alteryx.Store_Number as Store_Number1,&#xA;	stg_iowa_liquor_sales_alteryx.Store_Name as Store_Name1,&#xA;	stg_iowa_liquor_sales_alteryx.Bottles_Sold as Bottles_Sold1,&#xA;	stg_iowa_liquor_sales_alteryx.Sale_Dollars as Sale_Dollars1,&#xA;	stg_iowa_liquor_sales_alteryx.Volume_Sold_Liters as Volume_Sold_Liters1,&#xA;	stg_iowa_liquor_sales_alteryx.Volume_Sold_Gallons as Volume_Sold_Gallons1 &#xA;from stg_iowa_liquor_sales_alteryx" type="Int16" />
+                <Field name="Sale_Dollars" source="File: odbc:DRIVER={ODBC Driver 17 for SQL Server};UID=iowa;PWD=__EncPwd1__;DATABASE=Iowa_Liquor_Sales-alteryx;SERVER=100.71.4.111|||select stg_iowa_liquor_sales_alteryx.*,&#xA;	stg_iowa_liquor_sales_alteryx.DI_CreateDate as DI_CreateDate1,&#xA;	stg_iowa_liquor_sales_alteryx.DI_WorkflowFileName as DI_WorkflowFileName1,&#xA;	stg_iowa_liquor_sales_alteryx.[Invoice-Item_Number] as [Invoice-Item_Number1],&#xA;	stg_iowa_liquor_sales_alteryx.Store_Number as Store_Number1,&#xA;	stg_iowa_liquor_sales_alteryx.Store_Name as Store_Name1,&#xA;	stg_iowa_liquor_sales_alteryx.Bottles_Sold as Bottles_Sold1,&#xA;	stg_iowa_liquor_sales_alteryx.Sale_Dollars as Sale_Dollars1,&#xA;	stg_iowa_liquor_sales_alteryx.Volume_Sold_Liters as Volume_Sold_Liters1,&#xA;	stg_iowa_liquor_sales_alteryx.Volume_Sold_Gallons as Volume_Sold_Gallons1 &#xA;from stg_iowa_liquor_sales_alteryx" type="Double" />
+                <Field name="Volume_Sold_Liters" source="File: odbc:DRIVER={ODBC Driver 17 for SQL Server};UID=iowa;PWD=__EncPwd1__;DATABASE=Iowa_Liquor_Sales-alteryx;SERVER=100.71.4.111|||select stg_iowa_liquor_sales_alteryx.*,&#xA;	stg_iowa_liquor_sales_alteryx.DI_CreateDate as DI_CreateDate1,&#xA;	stg_iowa_liquor_sales_alteryx.DI_WorkflowFileName as DI_WorkflowFileName1,&#xA;	stg_iowa_liquor_sales_alteryx.[Invoice-Item_Number] as [Invoice-Item_Number1],&#xA;	stg_iowa_liquor_sales_alteryx.Store_Number as Store_Number1,&#xA;	stg_iowa_liquor_sales_alteryx.Store_Name as Store_Name1,&#xA;	stg_iowa_liquor_sales_alteryx.Bottles_Sold as Bottles_Sold1,&#xA;	stg_iowa_liquor_sales_alteryx.Sale_Dollars as Sale_Dollars1,&#xA;	stg_iowa_liquor_sales_alteryx.Volume_Sold_Liters as Volume_Sold_Liters1,&#xA;	stg_iowa_liquor_sales_alteryx.Volume_Sold_Gallons as Volume_Sold_Gallons1 &#xA;from stg_iowa_liquor_sales_alteryx" type="Double" />
+                <Field name="Volume_Sold_Gallons" source="File: odbc:DRIVER={ODBC Driver 17 for SQL Server};UID=iowa;PWD=__EncPwd1__;DATABASE=Iowa_Liquor_Sales-alteryx;SERVER=100.71.4.111|||select stg_iowa_liquor_sales_alteryx.*,&#xA;	stg_iowa_liquor_sales_alteryx.DI_CreateDate as DI_CreateDate1,&#xA;	stg_iowa_liquor_sales_alteryx.DI_WorkflowFileName as DI_WorkflowFileName1,&#xA;	stg_iowa_liquor_sales_alteryx.[Invoice-Item_Number] as [Invoice-Item_Number1],&#xA;	stg_iowa_liquor_sales_alteryx.Store_Number as Store_Number1,&#xA;	stg_iowa_liquor_sales_alteryx.Store_Name as Store_Name1,&#xA;	stg_iowa_liquor_sales_alteryx.Bottles_Sold as Bottles_Sold1,&#xA;	stg_iowa_liquor_sales_alteryx.Sale_Dollars as Sale_Dollars1,&#xA;	stg_iowa_liquor_sales_alteryx.Volume_Sold_Liters as Volume_Sold_Liters1,&#xA;	stg_iowa_liquor_sales_alteryx.Volume_Sold_Gallons as Volume_Sold_Gallons1 &#xA;from stg_iowa_liquor_sales_alteryx" type="Double" />
+                <Field name="DI_CreateDate1" source="File: odbc:DRIVER={ODBC Driver 17 for SQL Server};UID=iowa;PWD=__EncPwd1__;DATABASE=Iowa_Liquor_Sales-alteryx;SERVER=100.71.4.111|||select stg_iowa_liquor_sales_alteryx.*,&#xA;	stg_iowa_liquor_sales_alteryx.DI_CreateDate as DI_CreateDate1,&#xA;	stg_iowa_liquor_sales_alteryx.DI_WorkflowFileName as DI_WorkflowFileName1,&#xA;	stg_iowa_liquor_sales_alteryx.[Invoice-Item_Number] as [Invoice-Item_Number1],&#xA;	stg_iowa_liquor_sales_alteryx.Store_Number as Store_Number1,&#xA;	stg_iowa_liquor_sales_alteryx.Store_Name as Store_Name1,&#xA;	stg_iowa_liquor_sales_alteryx.Bottles_Sold as Bottles_Sold1,&#xA;	stg_iowa_liquor_sales_alteryx.Sale_Dollars as Sale_Dollars1,&#xA;	stg_iowa_liquor_sales_alteryx.Volume_Sold_Liters as Volume_Sold_Liters1,&#xA;	stg_iowa_liquor_sales_alteryx.Volume_Sold_Gallons as Volume_Sold_Gallons1 &#xA;from stg_iowa_liquor_sales_alteryx" type="DateTime" />
+                <Field name="DI_WorkflowFileName1" size="256" source="File: odbc:DRIVER={ODBC Driver 17 for SQL Server};UID=iowa;PWD=__EncPwd1__;DATABASE=Iowa_Liquor_Sales-alteryx;SERVER=100.71.4.111|||select stg_iowa_liquor_sales_alteryx.*,&#xA;	stg_iowa_liquor_sales_alteryx.DI_CreateDate as DI_CreateDate1,&#xA;	stg_iowa_liquor_sales_alteryx.DI_WorkflowFileName as DI_WorkflowFileName1,&#xA;	stg_iowa_liquor_sales_alteryx.[Invoice-Item_Number] as [Invoice-Item_Number1],&#xA;	stg_iowa_liquor_sales_alteryx.Store_Number as Store_Number1,&#xA;	stg_iowa_liquor_sales_alteryx.Store_Name as Store_Name1,&#xA;	stg_iowa_liquor_sales_alteryx.Bottles_Sold as Bottles_Sold1,&#xA;	stg_iowa_liquor_sales_alteryx.Sale_Dollars as Sale_Dollars1,&#xA;	stg_iowa_liquor_sales_alteryx.Volume_Sold_Liters as Volume_Sold_Liters1,&#xA;	stg_iowa_liquor_sales_alteryx.Volume_Sold_Gallons as Volume_Sold_Gallons1 &#xA;from stg_iowa_liquor_sales_alteryx" type="V_WString" />
+                <Field name="Invoice-Item_Number1" size="16" source="File: odbc:DRIVER={ODBC Driver 17 for SQL Server};UID=iowa;PWD=__EncPwd1__;DATABASE=Iowa_Liquor_Sales-alteryx;SERVER=100.71.4.111|||select stg_iowa_liquor_sales_alteryx.*,&#xA;	stg_iowa_liquor_sales_alteryx.DI_CreateDate as DI_CreateDate1,&#xA;	stg_iowa_liquor_sales_alteryx.DI_WorkflowFileName as DI_WorkflowFileName1,&#xA;	stg_iowa_liquor_sales_alteryx.[Invoice-Item_Number] as [Invoice-Item_Number1],&#xA;	stg_iowa_liquor_sales_alteryx.Store_Number as Store_Number1,&#xA;	stg_iowa_liquor_sales_alteryx.Store_Name as Store_Name1,&#xA;	stg_iowa_liquor_sales_alteryx.Bottles_Sold as Bottles_Sold1,&#xA;	stg_iowa_liquor_sales_alteryx.Sale_Dollars as Sale_Dollars1,&#xA;	stg_iowa_liquor_sales_alteryx.Volume_Sold_Liters as Volume_Sold_Liters1,&#xA;	stg_iowa_liquor_sales_alteryx.Volume_Sold_Gallons as Volume_Sold_Gallons1 &#xA;from stg_iowa_liquor_sales_alteryx" type="String" />
+                <Field name="Store_Number1" size="6" source="File: odbc:DRIVER={ODBC Driver 17 for SQL Server};UID=iowa;PWD=__EncPwd1__;DATABASE=Iowa_Liquor_Sales-alteryx;SERVER=100.71.4.111|||select stg_iowa_liquor_sales_alteryx.*,&#xA;	stg_iowa_liquor_sales_alteryx.DI_CreateDate as DI_CreateDate1,&#xA;	stg_iowa_liquor_sales_alteryx.DI_WorkflowFileName as DI_WorkflowFileName1,&#xA;	stg_iowa_liquor_sales_alteryx.[Invoice-Item_Number] as [Invoice-Item_Number1],&#xA;	stg_iowa_liquor_sales_alteryx.Store_Number as Store_Number1,&#xA;	stg_iowa_liquor_sales_alteryx.Store_Name as Store_Name1,&#xA;	stg_iowa_liquor_sales_alteryx.Bottles_Sold as Bottles_Sold1,&#xA;	stg_iowa_liquor_sales_alteryx.Sale_Dollars as Sale_Dollars1,&#xA;	stg_iowa_liquor_sales_alteryx.Volume_Sold_Liters as Volume_Sold_Liters1,&#xA;	stg_iowa_liquor_sales_alteryx.Volume_Sold_Gallons as Volume_Sold_Gallons1 &#xA;from stg_iowa_liquor_sales_alteryx" type="String" />
+                <Field name="Store_Name1" size="58" source="File: odbc:DRIVER={ODBC Driver 17 for SQL Server};UID=iowa;PWD=__EncPwd1__;DATABASE=Iowa_Liquor_Sales-alteryx;SERVER=100.71.4.111|||select stg_iowa_liquor_sales_alteryx.*,&#xA;	stg_iowa_liquor_sales_alteryx.DI_CreateDate as DI_CreateDate1,&#xA;	stg_iowa_liquor_sales_alteryx.DI_WorkflowFileName as DI_WorkflowFileName1,&#xA;	stg_iowa_liquor_sales_alteryx.[Invoice-Item_Number] as [Invoice-Item_Number1],&#xA;	stg_iowa_liquor_sales_alteryx.Store_Number as Store_Number1,&#xA;	stg_iowa_liquor_sales_alteryx.Store_Name as Store_Name1,&#xA;	stg_iowa_liquor_sales_alteryx.Bottles_Sold as Bottles_Sold1,&#xA;	stg_iowa_liquor_sales_alteryx.Sale_Dollars as Sale_Dollars1,&#xA;	stg_iowa_liquor_sales_alteryx.Volume_Sold_Liters as Volume_Sold_Liters1,&#xA;	stg_iowa_liquor_sales_alteryx.Volume_Sold_Gallons as Volume_Sold_Gallons1 &#xA;from stg_iowa_liquor_sales_alteryx" type="V_String" />
+                <Field name="Bottles_Sold1" source="File: odbc:DRIVER={ODBC Driver 17 for SQL Server};UID=iowa;PWD=__EncPwd1__;DATABASE=Iowa_Liquor_Sales-alteryx;SERVER=100.71.4.111|||select stg_iowa_liquor_sales_alteryx.*,&#xA;	stg_iowa_liquor_sales_alteryx.DI_CreateDate as DI_CreateDate1,&#xA;	stg_iowa_liquor_sales_alteryx.DI_WorkflowFileName as DI_WorkflowFileName1,&#xA;	stg_iowa_liquor_sales_alteryx.[Invoice-Item_Number] as [Invoice-Item_Number1],&#xA;	stg_iowa_liquor_sales_alteryx.Store_Number as Store_Number1,&#xA;	stg_iowa_liquor_sales_alteryx.Store_Name as Store_Name1,&#xA;	stg_iowa_liquor_sales_alteryx.Bottles_Sold as Bottles_Sold1,&#xA;	stg_iowa_liquor_sales_alteryx.Sale_Dollars as Sale_Dollars1,&#xA;	stg_iowa_liquor_sales_alteryx.Volume_Sold_Liters as Volume_Sold_Liters1,&#xA;	stg_iowa_liquor_sales_alteryx.Volume_Sold_Gallons as Volume_Sold_Gallons1 &#xA;from stg_iowa_liquor_sales_alteryx" type="Int16" />
+                <Field name="Sale_Dollars1" source="File: odbc:DRIVER={ODBC Driver 17 for SQL Server};UID=iowa;PWD=__EncPwd1__;DATABASE=Iowa_Liquor_Sales-alteryx;SERVER=100.71.4.111|||select stg_iowa_liquor_sales_alteryx.*,&#xA;	stg_iowa_liquor_sales_alteryx.DI_CreateDate as DI_CreateDate1,&#xA;	stg_iowa_liquor_sales_alteryx.DI_WorkflowFileName as DI_WorkflowFileName1,&#xA;	stg_iowa_liquor_sales_alteryx.[Invoice-Item_Number] as [Invoice-Item_Number1],&#xA;	stg_iowa_liquor_sales_alteryx.Store_Number as Store_Number1,&#xA;	stg_iowa_liquor_sales_alteryx.Store_Name as Store_Name1,&#xA;	stg_iowa_liquor_sales_alteryx.Bottles_Sold as Bottles_Sold1,&#xA;	stg_iowa_liquor_sales_alteryx.Sale_Dollars as Sale_Dollars1,&#xA;	stg_iowa_liquor_sales_alteryx.Volume_Sold_Liters as Volume_Sold_Liters1,&#xA;	stg_iowa_liquor_sales_alteryx.Volume_Sold_Gallons as Volume_Sold_Gallons1 &#xA;from stg_iowa_liquor_sales_alteryx" type="Double" />
+                <Field name="Volume_Sold_Liters1" source="File: odbc:DRIVER={ODBC Driver 17 for SQL Server};UID=iowa;PWD=__EncPwd1__;DATABASE=Iowa_Liquor_Sales-alteryx;SERVER=100.71.4.111|||select stg_iowa_liquor_sales_alteryx.*,&#xA;	stg_iowa_liquor_sales_alteryx.DI_CreateDate as DI_CreateDate1,&#xA;	stg_iowa_liquor_sales_alteryx.DI_WorkflowFileName as DI_WorkflowFileName1,&#xA;	stg_iowa_liquor_sales_alteryx.[Invoice-Item_Number] as [Invoice-Item_Number1],&#xA;	stg_iowa_liquor_sales_alteryx.Store_Number as Store_Number1,&#xA;	stg_iowa_liquor_sales_alteryx.Store_Name as Store_Name1,&#xA;	stg_iowa_liquor_sales_alteryx.Bottles_Sold as Bottles_Sold1,&#xA;	stg_iowa_liquor_sales_alteryx.Sale_Dollars as Sale_Dollars1,&#xA;	stg_iowa_liquor_sales_alteryx.Volume_Sold_Liters as Volume_Sold_Liters1,&#xA;	stg_iowa_liquor_sales_alteryx.Volume_Sold_Gallons as Volume_Sold_Gallons1 &#xA;from stg_iowa_liquor_sales_alteryx" type="Double" />
+                <Field name="Volume_Sold_Gallons1" source="File: odbc:DRIVER={ODBC Driver 17 for SQL Server};UID=iowa;PWD=__EncPwd1__;DATABASE=Iowa_Liquor_Sales-alteryx;SERVER=100.71.4.111|||select stg_iowa_liquor_sales_alteryx.*,&#xA;	stg_iowa_liquor_sales_alteryx.DI_CreateDate as DI_CreateDate1,&#xA;	stg_iowa_liquor_sales_alteryx.DI_WorkflowFileName as DI_WorkflowFileName1,&#xA;	stg_iowa_liquor_sales_alteryx.[Invoice-Item_Number] as [Invoice-Item_Number1],&#xA;	stg_iowa_liquor_sales_alteryx.Store_Number as Store_Number1,&#xA;	stg_iowa_liquor_sales_alteryx.Store_Name as Store_Name1,&#xA;	stg_iowa_liquor_sales_alteryx.Bottles_Sold as Bottles_Sold1,&#xA;	stg_iowa_liquor_sales_alteryx.Sale_Dollars as Sale_Dollars1,&#xA;	stg_iowa_liquor_sales_alteryx.Volume_Sold_Liters as Volume_Sold_Liters1,&#xA;	stg_iowa_liquor_sales_alteryx.Volume_Sold_Gallons as Volume_Sold_Gallons1 &#xA;from stg_iowa_liquor_sales_alteryx" type="Double" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="3">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="79" y="283" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <CachedCosmeticName />
+              <File FileFormat="23" RecordLimit="">aka:Real-Engineering-Connection|||select Dim_Iowa_Liquor_Stores.Store_SK,
+	Dim_Iowa_Liquor_Stores.Store_Name,
+	Dim_Iowa_Liquor_Stores.Store_ID 
+from Dim_Iowa_Liquor_Stores</File>
+              <FormatSpecificOptions>
+                <SingleRowFetch>False</SingleRowFetch>
+                <ReadCentroids>False</ReadCentroids>
+                <TableStyle>Quoted</TableStyle>
+                <CacheData>False</CacheData>
+                <SessionReadOnly>True</SessionReadOnly>
+                <ReadUncommitted>False</ReadUncommitted>
+                <NoProgress>True</NoProgress>
+                <PostSQL />
+                <PreSQLOnConfig>True</PreSQLOnConfig>
+                <PreSQL />
+              </FormatSpecificOptions>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>aka:Real-Engineering-Connection
+Query=select Dim_Iowa_Liquor_Store...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Store_SK" source="File: odbc:DRIVER={ODBC Driver 17 for SQL Server};UID=iowa;PWD=__EncPwd1__;DATABASE=Iowa_Liquor_Sales-alteryx;SERVER=100.71.4.111|||select Dim_Iowa_Liquor_Stores.Store_SK,&#xA;	Dim_Iowa_Liquor_Stores.Store_Name,&#xA;	Dim_Iowa_Liquor_Stores.Store_ID &#xA;from Dim_Iowa_Liquor_Stores" type="Int32" />
+                <Field name="Store_Name" size="80" source="File: odbc:DRIVER={ODBC Driver 17 for SQL Server};UID=iowa;PWD=__EncPwd1__;DATABASE=Iowa_Liquor_Sales-alteryx;SERVER=100.71.4.111|||select Dim_Iowa_Liquor_Stores.Store_SK,&#xA;	Dim_Iowa_Liquor_Stores.Store_Name,&#xA;	Dim_Iowa_Liquor_Stores.Store_ID &#xA;from Dim_Iowa_Liquor_Stores" type="V_String" />
+                <Field name="Store_ID" source="File: odbc:DRIVER={ODBC Driver 17 for SQL Server};UID=iowa;PWD=__EncPwd1__;DATABASE=Iowa_Liquor_Sales-alteryx;SERVER=100.71.4.111|||select Dim_Iowa_Liquor_Stores.Store_SK,&#xA;	Dim_Iowa_Liquor_Stores.Store_Name,&#xA;	Dim_Iowa_Liquor_Stores.Store_ID &#xA;from Dim_Iowa_Liquor_Stores" type="Int32" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="4">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="655" y="151" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="True" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Invoice-Item_Number" selected="True" rename="Invoice_Number" type="V_String" size="24" />
+                <SelectField field="date_sk" selected="False" rename="InvoiceDate_SK" />
+                <SelectField field="Invoice_Date" selected="True" />
+                <SelectField field="Store_SK" selected="True" />
+                <SelectField field="Store_Number" selected="True" />
+                <SelectField field="Bottles_Sold" selected="True" rename="Invoice_Bottles_Sold" />
+                <SelectField field="Sale_Dollars" selected="True" rename="Invoice_Sale_Dollars" />
+                <SelectField field="Volume_Sold_Gallons" selected="True" rename="Invoice_Volume_Sold_Gallons" />
+                <SelectField field="Volume_Sold_Liters" selected="True" rename="Invoice_Volume_Sold_Liters" />
+                <SelectField field="DI_WorkflowFileName" selected="True" rename="DI_JobID" />
+                <SelectField field="DI_CreateDate" selected="True" />
+                <SelectField field="Store_ID" selected="False" />
+                <SelectField field="Date" selected="False" rename="Invoice_Date" />
+                <SelectField field="Store_Name" selected="False" />
+                <SelectField field="Right_Store_Name" selected="False" />
+                <SelectField field="date_nk" selected="False" />
+                <SelectField field="Date_Year" selected="False" />
+                <SelectField field="DateKey" selected="True" rename="InvoiceDate_SK" />
+                <SelectField field="Right_Date" selected="False" />
+                <SelectField field="DayOfMonth" selected="False" />
+                <SelectField field="DaySuffix" selected="False" />
+                <SelectField field="DayName" selected="False" />
+                <SelectField field="DayOfWeek" selected="False" />
+                <SelectField field="DayOfWeekUSA" selected="False" />
+                <SelectField field="RunningCountOfDayInMonth" selected="False" />
+                <SelectField field="RunningCountOfDayInYear" selected="False" />
+                <SelectField field="RunningCountOfDayInQuarter" selected="False" />
+                <SelectField field="DayOfYear" selected="False" />
+                <SelectField field="WeekOfMonth" selected="False" />
+                <SelectField field="WeekOfQuarter" selected="False" />
+                <SelectField field="WeekOfYear" selected="False" />
+                <SelectField field="Month" selected="False" />
+                <SelectField field="MonthName" selected="False" />
+                <SelectField field="MonthOfQuarter" selected="False" />
+                <SelectField field="Quarter" selected="False" />
+                <SelectField field="QuarterName" selected="False" />
+                <SelectField field="Year" selected="False" />
+                <SelectField field="YearName" selected="False" />
+                <SelectField field="YYYYMM" selected="False" />
+                <SelectField field="MMYYYY" selected="False" />
+                <SelectField field="FirstDayOfWeekInYear" selected="False" />
+                <SelectField field="LastDayOfWeekInYear" selected="False" />
+                <SelectField field="FirstDayOfWeek" selected="False" />
+                <SelectField field="LastDayOfWeek" selected="False" />
+                <SelectField field="FirstDayOfMonth" selected="False" />
+                <SelectField field="LastDayOfMonth" selected="False" />
+                <SelectField field="FirstDayOfQuarter" selected="False" />
+                <SelectField field="LastDayOfQuarter" selected="False" />
+                <SelectField field="FirstDayOfYear" selected="False" />
+                <SelectField field="LastDayOfYear" selected="False" />
+                <SelectField field="IsWeekday" selected="False" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="5">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+            <Position x="307" y="138" />
+          </GuiSettings>
+          <Properties>
+            <Configuration joinByRecordPos="False">
+              <JoinInfo connection="Left">
+                <Field field="Store_Number" />
+                <Field field="Store_Name" />
+              </JoinInfo>
+              <JoinInfo connection="Right">
+                <Field field="Store_ID" />
+                <Field field="Store_Name" />
+              </JoinInfo>
+              <SelectConfiguration>
+                <Configuration outputConnection="Join">
+                  <OrderChanged value="False" />
+                  <CommaDecimal value="False" />
+                  <SelectFields>
+                    <SelectField field="Right_Store_Name" selected="True" rename="Right_Store_Name" input="Right_" />
+                    <SelectField field="*Unknown" selected="True" />
+                  </SelectFields>
+                </Configuration>
+              </SelectConfiguration>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+        </Node>
+        <Node ToolID="6">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="199" y="127" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="DI_CreateDate" selected="True" />
+                <SelectField field="DI_WorkflowFileName" selected="True" />
+                <SelectField field="Invoice-Item_Number" selected="True" />
+                <SelectField field="Date" selected="True" />
+                <SelectField field="Store_Number" selected="True" type="Int32" size="4" />
+                <SelectField field="Store_Name" selected="True" />
+                <SelectField field="Bottles_Sold" selected="True" />
+                <SelectField field="Sale_Dollars" selected="True" />
+                <SelectField field="Volume_Sold_Liters" selected="True" />
+                <SelectField field="Volume_Sold_Gallons" selected="True" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="7">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="199" y="282" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Store_SK" selected="True" />
+                <SelectField field="Store_Name" selected="True" />
+                <SelectField field="Store_ID" selected="True" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="9">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DateTime.DateTime">
+            <Position x="391" y="139" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <IsFrom value="False" />
+              <InputFieldName>Date</InputFieldName>
+              <Language>English</Language>
+              <Format>MM/dd/yyyy</Format>
+              <OutputFieldName>Invoice_Date</OutputFieldName>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Convert Date From:
+MM/dd/yyyy</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDateTime" />
+        </Node>
+        <Node ToolID="12">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+            <Position x="535" y="151" />
+          </GuiSettings>
+          <Properties>
+            <Configuration joinByRecordPos="False">
+              <JoinInfo connection="Left">
+                <Field field="Invoice_Date" />
+              </JoinInfo>
+              <JoinInfo connection="Right">
+                <Field field="Date" />
+              </JoinInfo>
+              <SelectConfiguration>
+                <Configuration outputConnection="Join">
+                  <OrderChanged value="False" />
+                  <CommaDecimal value="False" />
+                  <SelectFields>
+                    <SelectField field="Right_Date" selected="True" rename="Right_Date" input="Right_" />
+                    <SelectField field="*Unknown" selected="True" />
+                  </SelectFields>
+                </Configuration>
+              </SelectConfiguration>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+        </Node>
+        <Node ToolID="13">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="475" y="211" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <CachedCosmeticName />
+              <File FileFormat="23" RecordLimit="">aka:Real-Engineering-Connection|||select Dim_Date.* 
+from Dim_Date</File>
+              <FormatSpecificOptions>
+                <SingleRowFetch>False</SingleRowFetch>
+                <ReadCentroids>False</ReadCentroids>
+                <TableStyle>Quoted</TableStyle>
+                <CacheData>False</CacheData>
+                <SessionReadOnly>True</SessionReadOnly>
+                <ReadUncommitted>False</ReadUncommitted>
+                <NoProgress>True</NoProgress>
+                <PostSQL />
+                <PreSQLOnConfig>True</PreSQLOnConfig>
+                <PreSQL />
+              </FormatSpecificOptions>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>aka:Real-Engineering-Connection
+Query=select Dim_Date.* 
+from Dim...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="DateKey" source="File: odbc:DRIVER={ODBC Driver 17 for SQL Server};UID=iowa;PWD=__EncPwd1__;DATABASE=Iowa_Liquor_Sales-alteryx;SERVER=100.71.4.111|||select Dim_Date.* &#xA;from Dim_Date" type="Int32" />
+                <Field name="Date" source="File: odbc:DRIVER={ODBC Driver 17 for SQL Server};UID=iowa;PWD=__EncPwd1__;DATABASE=Iowa_Liquor_Sales-alteryx;SERVER=100.71.4.111|||select Dim_Date.* &#xA;from Dim_Date" type="Date" />
+                <Field name="DayOfMonth" source="File: odbc:DRIVER={ODBC Driver 17 for SQL Server};UID=iowa;PWD=__EncPwd1__;DATABASE=Iowa_Liquor_Sales-alteryx;SERVER=100.71.4.111|||select Dim_Date.* &#xA;from Dim_Date" type="Int16" />
+                <Field name="DaySuffix" size="4" source="File: odbc:DRIVER={ODBC Driver 17 for SQL Server};UID=iowa;PWD=__EncPwd1__;DATABASE=Iowa_Liquor_Sales-alteryx;SERVER=100.71.4.111|||select Dim_Date.* &#xA;from Dim_Date" type="V_String" />
+                <Field name="DayName" size="9" source="File: odbc:DRIVER={ODBC Driver 17 for SQL Server};UID=iowa;PWD=__EncPwd1__;DATABASE=Iowa_Liquor_Sales-alteryx;SERVER=100.71.4.111|||select Dim_Date.* &#xA;from Dim_Date" type="V_String" />
+                <Field name="DayOfWeek" source="File: odbc:DRIVER={ODBC Driver 17 for SQL Server};UID=iowa;PWD=__EncPwd1__;DATABASE=Iowa_Liquor_Sales-alteryx;SERVER=100.71.4.111|||select Dim_Date.* &#xA;from Dim_Date" type="Int16" />
+                <Field name="DayOfWeekUSA" source="File: odbc:DRIVER={ODBC Driver 17 for SQL Server};UID=iowa;PWD=__EncPwd1__;DATABASE=Iowa_Liquor_Sales-alteryx;SERVER=100.71.4.111|||select Dim_Date.* &#xA;from Dim_Date" type="Int16" />
+                <Field name="RunningCountOfDayInMonth" source="File: odbc:DRIVER={ODBC Driver 17 for SQL Server};UID=iowa;PWD=__EncPwd1__;DATABASE=Iowa_Liquor_Sales-alteryx;SERVER=100.71.4.111|||select Dim_Date.* &#xA;from Dim_Date" type="Int16" />
+                <Field name="RunningCountOfDayInYear" source="File: odbc:DRIVER={ODBC Driver 17 for SQL Server};UID=iowa;PWD=__EncPwd1__;DATABASE=Iowa_Liquor_Sales-alteryx;SERVER=100.71.4.111|||select Dim_Date.* &#xA;from Dim_Date" type="Int16" />
+                <Field name="RunningCountOfDayInQuarter" source="File: odbc:DRIVER={ODBC Driver 17 for SQL Server};UID=iowa;PWD=__EncPwd1__;DATABASE=Iowa_Liquor_Sales-alteryx;SERVER=100.71.4.111|||select Dim_Date.* &#xA;from Dim_Date" type="Int16" />
+                <Field name="DayOfYear" source="File: odbc:DRIVER={ODBC Driver 17 for SQL Server};UID=iowa;PWD=__EncPwd1__;DATABASE=Iowa_Liquor_Sales-alteryx;SERVER=100.71.4.111|||select Dim_Date.* &#xA;from Dim_Date" type="Int16" />
+                <Field name="WeekOfMonth" source="File: odbc:DRIVER={ODBC Driver 17 for SQL Server};UID=iowa;PWD=__EncPwd1__;DATABASE=Iowa_Liquor_Sales-alteryx;SERVER=100.71.4.111|||select Dim_Date.* &#xA;from Dim_Date" type="Int16" />
+                <Field name="WeekOfQuarter" source="File: odbc:DRIVER={ODBC Driver 17 for SQL Server};UID=iowa;PWD=__EncPwd1__;DATABASE=Iowa_Liquor_Sales-alteryx;SERVER=100.71.4.111|||select Dim_Date.* &#xA;from Dim_Date" type="Int16" />
+                <Field name="WeekOfYear" source="File: odbc:DRIVER={ODBC Driver 17 for SQL Server};UID=iowa;PWD=__EncPwd1__;DATABASE=Iowa_Liquor_Sales-alteryx;SERVER=100.71.4.111|||select Dim_Date.* &#xA;from Dim_Date" type="Int16" />
+                <Field name="Month" source="File: odbc:DRIVER={ODBC Driver 17 for SQL Server};UID=iowa;PWD=__EncPwd1__;DATABASE=Iowa_Liquor_Sales-alteryx;SERVER=100.71.4.111|||select Dim_Date.* &#xA;from Dim_Date" type="Int16" />
+                <Field name="MonthName" size="9" source="File: odbc:DRIVER={ODBC Driver 17 for SQL Server};UID=iowa;PWD=__EncPwd1__;DATABASE=Iowa_Liquor_Sales-alteryx;SERVER=100.71.4.111|||select Dim_Date.* &#xA;from Dim_Date" type="V_String" />
+                <Field name="MonthOfQuarter" source="File: odbc:DRIVER={ODBC Driver 17 for SQL Server};UID=iowa;PWD=__EncPwd1__;DATABASE=Iowa_Liquor_Sales-alteryx;SERVER=100.71.4.111|||select Dim_Date.* &#xA;from Dim_Date" type="Int16" />
+                <Field name="Quarter" source="File: odbc:DRIVER={ODBC Driver 17 for SQL Server};UID=iowa;PWD=__EncPwd1__;DATABASE=Iowa_Liquor_Sales-alteryx;SERVER=100.71.4.111|||select Dim_Date.* &#xA;from Dim_Date" type="Int16" />
+                <Field name="QuarterName" size="9" source="File: odbc:DRIVER={ODBC Driver 17 for SQL Server};UID=iowa;PWD=__EncPwd1__;DATABASE=Iowa_Liquor_Sales-alteryx;SERVER=100.71.4.111|||select Dim_Date.* &#xA;from Dim_Date" type="V_String" />
+                <Field name="Year" source="File: odbc:DRIVER={ODBC Driver 17 for SQL Server};UID=iowa;PWD=__EncPwd1__;DATABASE=Iowa_Liquor_Sales-alteryx;SERVER=100.71.4.111|||select Dim_Date.* &#xA;from Dim_Date" type="Int16" />
+                <Field name="YearName" size="7" source="File: odbc:DRIVER={ODBC Driver 17 for SQL Server};UID=iowa;PWD=__EncPwd1__;DATABASE=Iowa_Liquor_Sales-alteryx;SERVER=100.71.4.111|||select Dim_Date.* &#xA;from Dim_Date" type="String" />
+                <Field name="YYYYMM" size="6" source="File: odbc:DRIVER={ODBC Driver 17 for SQL Server};UID=iowa;PWD=__EncPwd1__;DATABASE=Iowa_Liquor_Sales-alteryx;SERVER=100.71.4.111|||select Dim_Date.* &#xA;from Dim_Date" type="String" />
+                <Field name="MMYYYY" size="6" source="File: odbc:DRIVER={ODBC Driver 17 for SQL Server};UID=iowa;PWD=__EncPwd1__;DATABASE=Iowa_Liquor_Sales-alteryx;SERVER=100.71.4.111|||select Dim_Date.* &#xA;from Dim_Date" type="String" />
+                <Field name="FirstDayOfWeekInYear" source="File: odbc:DRIVER={ODBC Driver 17 for SQL Server};UID=iowa;PWD=__EncPwd1__;DATABASE=Iowa_Liquor_Sales-alteryx;SERVER=100.71.4.111|||select Dim_Date.* &#xA;from Dim_Date" type="Date" />
+                <Field name="LastDayOfWeekInYear" source="File: odbc:DRIVER={ODBC Driver 17 for SQL Server};UID=iowa;PWD=__EncPwd1__;DATABASE=Iowa_Liquor_Sales-alteryx;SERVER=100.71.4.111|||select Dim_Date.* &#xA;from Dim_Date" type="Date" />
+                <Field name="FirstDayOfWeek" source="File: odbc:DRIVER={ODBC Driver 17 for SQL Server};UID=iowa;PWD=__EncPwd1__;DATABASE=Iowa_Liquor_Sales-alteryx;SERVER=100.71.4.111|||select Dim_Date.* &#xA;from Dim_Date" type="Date" />
+                <Field name="LastDayOfWeek" source="File: odbc:DRIVER={ODBC Driver 17 for SQL Server};UID=iowa;PWD=__EncPwd1__;DATABASE=Iowa_Liquor_Sales-alteryx;SERVER=100.71.4.111|||select Dim_Date.* &#xA;from Dim_Date" type="Date" />
+                <Field name="FirstDayOfMonth" source="File: odbc:DRIVER={ODBC Driver 17 for SQL Server};UID=iowa;PWD=__EncPwd1__;DATABASE=Iowa_Liquor_Sales-alteryx;SERVER=100.71.4.111|||select Dim_Date.* &#xA;from Dim_Date" type="Date" />
+                <Field name="LastDayOfMonth" source="File: odbc:DRIVER={ODBC Driver 17 for SQL Server};UID=iowa;PWD=__EncPwd1__;DATABASE=Iowa_Liquor_Sales-alteryx;SERVER=100.71.4.111|||select Dim_Date.* &#xA;from Dim_Date" type="Date" />
+                <Field name="FirstDayOfQuarter" source="File: odbc:DRIVER={ODBC Driver 17 for SQL Server};UID=iowa;PWD=__EncPwd1__;DATABASE=Iowa_Liquor_Sales-alteryx;SERVER=100.71.4.111|||select Dim_Date.* &#xA;from Dim_Date" type="Date" />
+                <Field name="LastDayOfQuarter" source="File: odbc:DRIVER={ODBC Driver 17 for SQL Server};UID=iowa;PWD=__EncPwd1__;DATABASE=Iowa_Liquor_Sales-alteryx;SERVER=100.71.4.111|||select Dim_Date.* &#xA;from Dim_Date" type="Date" />
+                <Field name="FirstDayOfYear" source="File: odbc:DRIVER={ODBC Driver 17 for SQL Server};UID=iowa;PWD=__EncPwd1__;DATABASE=Iowa_Liquor_Sales-alteryx;SERVER=100.71.4.111|||select Dim_Date.* &#xA;from Dim_Date" type="Date" />
+                <Field name="LastDayOfYear" source="File: odbc:DRIVER={ODBC Driver 17 for SQL Server};UID=iowa;PWD=__EncPwd1__;DATABASE=Iowa_Liquor_Sales-alteryx;SERVER=100.71.4.111|||select Dim_Date.* &#xA;from Dim_Date" type="Date" />
+                <Field name="IsWeekday" source="File: odbc:DRIVER={ODBC Driver 17 for SQL Server};UID=iowa;PWD=__EncPwd1__;DATABASE=Iowa_Liquor_Sales-alteryx;SERVER=100.71.4.111|||select Dim_Date.* &#xA;from Dim_Date" type="Bool" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="11">
+          <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+            <Position x="774" y="222" width="156" height="225" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Caption>Container 11</Caption>
+              <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+              <Disabled value="True" />
+              <Folded value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <ChildNodes>
+            <Node ToolID="10">
+              <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+                <Position x="799" y="271" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <File MaxRecords="" FileFormat="23">aka:Real-Engineering-Connection|||FCT_Iowa_Liquor_Sales_Invoice_Header</File>
+                  <Passwords />
+                  <CachedCosmeticName />
+                  <Disable>False</Disable>
+                  <FormatSpecificOptions>
+                    <TransactionMessages>False</TransactionMessages>
+                    <Geometry>True</Geometry>
+                    <Projection />
+                    <IgnoreDropTableSQLErrors>False</IgnoreDropTableSQLErrors>
+                    <SpatialObjSize>8000</SpatialObjSize>
+                    <OutputOption>Delete</OutputOption>
+                    <PostSQL />
+                    <TransactionSize>10000</TransactionSize>
+                    <TableStyle>Quoted</TableStyle>
+                    <PreSQL />
+                  </FormatSpecificOptions>
+                  <MultiFile value="False" />
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText>aka:Real-Engineering-Connection
+Query=FCT_Iowa_Liquor_Sales_Invoic...</DefaultAnnotationText>
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+              <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+            </Node>
+          </ChildNodes>
+        </Node>
+      </ChildNodes>
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="6" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="Output" />
+      <Destination ToolID="7" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="Output" />
+      <Destination ToolID="8" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="Output" />
+      <Destination ToolID="10" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="Join" />
+      <Destination ToolID="9" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="6" Connection="Output" />
+      <Destination ToolID="5" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="7" Connection="Output" />
+      <Destination ToolID="5" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="9" Connection="Output" />
+      <Destination ToolID="12" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="13" Connection="Output" />
+      <Destination ToolID="12" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="12" Connection="Join" />
+      <Destination ToolID="4" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <RunWithE2 value="True" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>05_iowa_fct_header</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="a7277c66-1b38-4118-ba81-338347e58c3b" />
+      <Telemetry>
+        <PreviousWorkflowId value="100e8940-59f5-41af-a4ab-d591659700d9" />
+        <OriginWorkflowId value="100e8940-59f5-41af-a4ab-d591659700d9" />
+      </Telemetry>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>

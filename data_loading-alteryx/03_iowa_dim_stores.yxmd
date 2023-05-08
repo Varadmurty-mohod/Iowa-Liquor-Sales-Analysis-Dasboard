@@ -1,0 +1,512 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2022.3">
+  <Nodes>
+    <Node ToolID="17">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="55" y="54" width="995" height="393" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Container 17</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="10">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+            <Position x="476" y="187" />
+          </GuiSettings>
+          <Properties>
+            <Configuration joinByRecordPos="False">
+              <JoinInfo connection="Left">
+                <Field field="City" />
+              </JoinInfo>
+              <JoinInfo connection="Right">
+                <Field field="City" />
+              </JoinInfo>
+              <SelectConfiguration>
+                <Configuration outputConnection="Join">
+                  <OrderChanged value="False" />
+                  <CommaDecimal value="False" />
+                  <SelectFields>
+                    <SelectField field="Right_City" selected="True" rename="Right_City" input="Right_" />
+                    <SelectField field="*Unknown" selected="True" />
+                  </SelectFields>
+                </Configuration>
+              </SelectConfiguration>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+        </Node>
+        <Node ToolID="2">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="80" y="175" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <File FileFormat="23" RecordLimit="100">aka:Real-Engineering-Connection|||select stg_iowa_liquor_stores_alteryx.* 
+from stg_iowa_liquor_stores_alteryx</File>
+              <FormatSpecificOptions>
+                <SingleRowFetch>False</SingleRowFetch>
+                <ReadCentroids>False</ReadCentroids>
+                <TableStyle>Quoted</TableStyle>
+                <CacheData>False</CacheData>
+                <SessionReadOnly>True</SessionReadOnly>
+                <ReadUncommitted>False</ReadUncommitted>
+                <NoProgress>True</NoProgress>
+                <PostSQL />
+                <PreSQLOnConfig>True</PreSQLOnConfig>
+                <PreSQL />
+              </FormatSpecificOptions>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>aka:Real-Engineering-Connection
+Query=select stg_iowa_liquor_store...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <Dependencies>
+              <Implicit />
+            </Dependencies>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Store_SK" source="File: aka:Real-Engineering-Connection|||select stg_iowa_liquor_stores_alteryx.* &#xA;from stg_iowa_liquor_stores_alteryx" type="Int32" />
+                <Field name="Address" size="55" source="File: aka:Real-Engineering-Connection|||select stg_iowa_liquor_stores_alteryx.* &#xA;from stg_iowa_liquor_stores_alteryx" type="V_String" />
+                <Field name="City" size="17" source="File: aka:Real-Engineering-Connection|||select stg_iowa_liquor_stores_alteryx.* &#xA;from stg_iowa_liquor_stores_alteryx" type="V_String" />
+                <Field name="State" size="2" source="File: aka:Real-Engineering-Connection|||select stg_iowa_liquor_stores_alteryx.* &#xA;from stg_iowa_liquor_stores_alteryx" type="String" />
+                <Field name="Store" size="6" source="File: aka:Real-Engineering-Connection|||select stg_iowa_liquor_stores_alteryx.* &#xA;from stg_iowa_liquor_stores_alteryx" type="String" />
+                <Field name="Name" size="58" source="File: aka:Real-Engineering-Connection|||select stg_iowa_liquor_stores_alteryx.* &#xA;from stg_iowa_liquor_stores_alteryx" type="V_String" />
+                <Field name="Store Status" size="1" source="File: aka:Real-Engineering-Connection|||select stg_iowa_liquor_stores_alteryx.* &#xA;from stg_iowa_liquor_stores_alteryx" type="String" />
+                <Field name="Zip Code" source="File: aka:Real-Engineering-Connection|||select stg_iowa_liquor_stores_alteryx.* &#xA;from stg_iowa_liquor_stores_alteryx" type="Int32" />
+                <Field name="Store Address" size="28" source="File: aka:Real-Engineering-Connection|||select stg_iowa_liquor_stores_alteryx.* &#xA;from stg_iowa_liquor_stores_alteryx" type="String" />
+                <Field name="Report Date" size="10" source="File: aka:Real-Engineering-Connection|||select stg_iowa_liquor_stores_alteryx.* &#xA;from stg_iowa_liquor_stores_alteryx" type="String" />
+                <Field name="DI_CreateDate" source="File: aka:Real-Engineering-Connection|||select stg_iowa_liquor_stores_alteryx.* &#xA;from stg_iowa_liquor_stores_alteryx" type="DateTime" />
+                <Field name="DI_WorkflowFileName" size="256" source="File: aka:Real-Engineering-Connection|||select stg_iowa_liquor_stores_alteryx.* &#xA;from stg_iowa_liquor_stores_alteryx" type="V_WString" />
+                <Field name="DI_WorkflowDirectory" size="256" source="File: aka:Real-Engineering-Connection|||select stg_iowa_liquor_stores_alteryx.* &#xA;from stg_iowa_liquor_stores_alteryx" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="3">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="176" y="175" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="True" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Store_SK" selected="True" />
+                <SelectField field="Store" selected="True" rename="Store_ID" type="Int32" size="4" />
+                <SelectField field="Name" selected="True" rename="Store_Name" size="80" />
+                <SelectField field="Store Status" selected="True" rename="Store_Status" />
+                <SelectField field="Address" selected="True" size="80" />
+                <SelectField field="Zip Code" selected="True" rename="Zip_Code" />
+                <SelectField field="City" selected="True" />
+                <SelectField field="Report Date" selected="True" type="V_String" size="10" />
+                <SelectField field="DI_WorkflowFileName" selected="True" rename="DI_JobID" />
+                <SelectField field="DI_CreateDate" selected="True" />
+                <SelectField field="State" selected="False" />
+                <SelectField field="Store Address" selected="False" />
+                <SelectField field="DI_WorkflowDirectory" selected="False" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="6">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Unique.Unique">
+            <Position x="680" y="199" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <UniqueFields>
+                <Field field="Store_Name" />
+                <Field field="Zip_Code" />
+                <Field field="City" />
+              </UniqueFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnique" />
+        </Node>
+        <Node ToolID="9">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DateTime.DateTime">
+            <Position x="284" y="175" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <IsFrom value="False" />
+              <InputFieldName>Report Date</InputFieldName>
+              <Language>English</Language>
+              <Format>MM/dd/yyyy</Format>
+              <OutputFieldName>Report_Date</OutputFieldName>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Convert Report Date From:
+MM/dd/yyyy</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDateTime" />
+        </Node>
+        <Node ToolID="11">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="284" y="271" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <File FileFormat="23" RecordLimit="">aka:Real-Engineering-Connection|||select Dim_Iowa_City.City_SK,
+	Dim_Iowa_City.City 
+from Dim_Iowa_City</File>
+              <FormatSpecificOptions>
+                <SingleRowFetch>False</SingleRowFetch>
+                <ReadCentroids>False</ReadCentroids>
+                <TableStyle>Quoted</TableStyle>
+                <CacheData>False</CacheData>
+                <SessionReadOnly>True</SessionReadOnly>
+                <ReadUncommitted>False</ReadUncommitted>
+                <NoProgress>True</NoProgress>
+                <PostSQL />
+                <PreSQLOnConfig>True</PreSQLOnConfig>
+                <PreSQL />
+              </FormatSpecificOptions>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>aka:Real-Engineering-Connection
+Query=select Dim_Iowa_City.City_SK...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <Dependencies>
+              <Implicit />
+            </Dependencies>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="City_SK" source="File: aka:Real-Engineering-Connection|||select Dim_Iowa_City.City_SK,&#xA;	Dim_Iowa_City.City &#xA;from Dim_Iowa_City" type="Int32" />
+                <Field name="City" size="24" source="File: aka:Real-Engineering-Connection|||select Dim_Iowa_City.City_SK,&#xA;	Dim_Iowa_City.City &#xA;from Dim_Iowa_City" type="V_String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="12">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+            <Position x="584" y="199" />
+          </GuiSettings>
+          <Properties>
+            <Configuration joinByRecordPos="False">
+              <JoinInfo connection="Left">
+                <Field field="Zip_Code" />
+                <Field field="City" />
+              </JoinInfo>
+              <JoinInfo connection="Right">
+                <Field field="Zip_Code" />
+                <Field field="City" />
+              </JoinInfo>
+              <SelectConfiguration>
+                <Configuration outputConnection="Join">
+                  <OrderChanged value="False" />
+                  <CommaDecimal value="False" />
+                  <SelectFields>
+                    <SelectField field="Left_Right_City" selected="True" rename="Left_Right_City" input="Left_" />
+                    <SelectField field="Right_Zip_Code" selected="True" rename="Right_Zip_Code" input="Right_" />
+                    <SelectField field="Right_City" selected="True" rename="Right_City" input="Right_" />
+                    <SelectField field="*Unknown" selected="True" />
+                  </SelectFields>
+                </Configuration>
+              </SelectConfiguration>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+        </Node>
+        <Node ToolID="13">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="476" y="271" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <File FileFormat="23" RecordLimit="">aka:Real-Engineering-Connection|||select Dim_Iowa_Liquor_Geo.County_SK,
+	Dim_Iowa_Liquor_Geo.Geo_SK,
+	Dim_Iowa_Liquor_Geo.Zip_Code,
+	Dim_Iowa_Liquor_Geo.City 
+from Dim_Iowa_Liquor_Geo</File>
+              <FormatSpecificOptions>
+                <SingleRowFetch>False</SingleRowFetch>
+                <ReadCentroids>False</ReadCentroids>
+                <TableStyle>Quoted</TableStyle>
+                <CacheData>False</CacheData>
+                <SessionReadOnly>True</SessionReadOnly>
+                <ReadUncommitted>False</ReadUncommitted>
+                <NoProgress>True</NoProgress>
+                <PostSQL />
+                <PreSQLOnConfig>True</PreSQLOnConfig>
+                <PreSQL />
+              </FormatSpecificOptions>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>aka:Real-Engineering-Connection
+Query=select Dim_Iowa_Liquor_Geo.C...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <Dependencies>
+              <Implicit />
+            </Dependencies>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="County_SK" source="File: aka:Real-Engineering-Connection|||select Dim_Iowa_Liquor_Geo.County_SK,&#xA;	Dim_Iowa_Liquor_Geo.Geo_SK,&#xA;	Dim_Iowa_Liquor_Geo.Zip_Code,&#xA;	Dim_Iowa_Liquor_Geo.City &#xA;from Dim_Iowa_Liquor_Geo" type="Int32" />
+                <Field name="Geo_SK" source="File: aka:Real-Engineering-Connection|||select Dim_Iowa_Liquor_Geo.County_SK,&#xA;	Dim_Iowa_Liquor_Geo.Geo_SK,&#xA;	Dim_Iowa_Liquor_Geo.Zip_Code,&#xA;	Dim_Iowa_Liquor_Geo.City &#xA;from Dim_Iowa_Liquor_Geo" type="Int32" />
+                <Field name="Zip_Code" source="File: aka:Real-Engineering-Connection|||select Dim_Iowa_Liquor_Geo.County_SK,&#xA;	Dim_Iowa_Liquor_Geo.Geo_SK,&#xA;	Dim_Iowa_Liquor_Geo.Zip_Code,&#xA;	Dim_Iowa_Liquor_Geo.City &#xA;from Dim_Iowa_Liquor_Geo" type="Int32" />
+                <Field name="City" size="20" source="File: aka:Real-Engineering-Connection|||select Dim_Iowa_Liquor_Geo.County_SK,&#xA;	Dim_Iowa_Liquor_Geo.Geo_SK,&#xA;	Dim_Iowa_Liquor_Geo.Zip_Code,&#xA;	Dim_Iowa_Liquor_Geo.City &#xA;from Dim_Iowa_Liquor_Geo" type="V_String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="14">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="764" y="187" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="True" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Store_SK" selected="True" />
+                <SelectField field="Store_ID" selected="True" />
+                <SelectField field="Store_Name" selected="True" />
+                <SelectField field="Store_Status" selected="True" />
+                <SelectField field="Address" selected="True" />
+                <SelectField field="Zip_Code" selected="True" />
+                <SelectField field="City_SK" selected="True" />
+                <SelectField field="County_SK" selected="True" />
+                <SelectField field="Report_Date" selected="True" />
+                <SelectField field="DI_JobID" selected="True" />
+                <SelectField field="DI_CreateDate" selected="True" />
+                <SelectField field="Report_Date2" selected="False" />
+                <SelectField field="Store Status" selected="False" />
+                <SelectField field="City" selected="False" />
+                <SelectField field="Left_Right_City" selected="False" />
+                <SelectField field="Geo_SK" selected="False" />
+                <SelectField field="Right_Zip_Code" selected="False" />
+                <SelectField field="Right_City" selected="False" />
+                <SelectField field="Report Date" selected="False" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="16">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="860" y="103" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\Adonis\AppData\Local\Temp\Engine_30020_d275a1dc1c18054a96f79363f4000dd2_\Engine_30020_b30dd7d5a4f58e4e9edc5b0141aeee79~.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Profile</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="15">
+          <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+            <Position x="871" y="210" width="154" height="180" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Caption>Container 15</Caption>
+              <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+              <Disabled value="False" />
+              <Folded value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <ChildNodes>
+            <Node ToolID="7">
+              <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+                <Position x="896" y="259" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <File MaxRecords="" FileFormat="23">aka:Real-Engineering-Connection|||Dim_Iowa_Liquor_Stores</File>
+                  <Passwords />
+                  <CachedCosmeticName />
+                  <Disable>False</Disable>
+                  <FormatSpecificOptions>
+                    <TransactionMessages>False</TransactionMessages>
+                    <Geometry>True</Geometry>
+                    <Projection />
+                    <IgnoreDropTableSQLErrors>False</IgnoreDropTableSQLErrors>
+                    <SpatialObjSize>8000</SpatialObjSize>
+                    <OutputOption>Delete</OutputOption>
+                    <PostSQL />
+                    <TransactionSize>10000</TransactionSize>
+                    <TableStyle>Quoted</TableStyle>
+                    <PreSQL />
+                  </FormatSpecificOptions>
+                  <MultiFile value="False" />
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText>aka:Real-Engineering-Connection
+Query=Dim_Iowa_Liquor_Stores</DefaultAnnotationText>
+                  <Left value="False" />
+                </Annotation>
+                <Dependencies>
+                  <Implicit />
+                </Dependencies>
+              </Properties>
+              <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+            </Node>
+          </ChildNodes>
+        </Node>
+      </ChildNodes>
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="10" Connection="Join" />
+      <Destination ToolID="12" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="13" Connection="Output" />
+      <Destination ToolID="12" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="3" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="Output" />
+      <Destination ToolID="9" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="6" Connection="Unique" />
+      <Destination ToolID="14" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="9" Connection="Output" />
+      <Destination ToolID="10" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="11" Connection="Output" />
+      <Destination ToolID="10" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="12" Connection="Join" />
+      <Destination ToolID="6" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="14" Connection="Output" />
+      <Destination ToolID="7" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="14" Connection="Output" />
+      <Destination ToolID="16" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <RunWithE2 value="True" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>iowa_liquor_stores</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="78bed778-d53c-4f9d-9770-1c8027d14afa" />
+      <Telemetry>
+        <PreviousWorkflowId value="c9552967-abfa-4d67-bc13-628cbb1b17a0" />
+        <OriginWorkflowId value="c9552967-abfa-4d67-bc13-628cbb1b17a0" />
+      </Telemetry>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>
