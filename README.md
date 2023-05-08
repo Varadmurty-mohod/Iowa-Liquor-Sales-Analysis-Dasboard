@@ -15,3 +15,9 @@
 <img width="1221" alt="Screenshot 2023-05-07 at 11 10 16 PM" src="https://user-images.githubusercontent.com/69577585/236725619-a08495fe-7ece-414c-9fbb-7ccf05ae2102.png">
 <img width="1226" alt="Screenshot 2023-05-07 at 11 10 23 PM" src="https://user-images.githubusercontent.com/69577585/236725621-ca126e07-202e-434a-ac43-7df8bc4f1c7a.png">
 <img width="1228" alt="Screenshot 2023-05-07 at 11 10 31 PM" src="https://user-images.githubusercontent.com/69577585/236725622-2f0f16b7-960c-467c-9a3e-1afbcb31a256.png">
+<img width="1448" alt="Screenshot 2023-05-07 at 11 19 07 PM" src="https://user-images.githubusercontent.com/69577585/236726490-fdda7a25-f72a-4213-9a26-f0e032e5285e.png">
+<img width="1449" alt="Screenshot 2023-05-07 at 11 19 16 PM" src="https://user-images.githubusercontent.com/69577585/236726491-d5951802-fc7b-4f2d-8891-7ae9fba5ddc9.png">
+<img width="1446" alt="Screenshot 2023-05-07 at 11 19 25 PM" src="https://user-images.githubusercontent.com/69577585/236726492-d22e0d9a-d784-4030-aade-e665b8f17315.png">
+<img width="1448" alt="Screenshot 2023-05-07 at 11 19 34 PM" src="https://user-images.githubusercontent.com/69577585/236726493-cbf29ca2-4a84-49d3-849f-5d4d7fc581fa.png">
+<img width="1447" alt="Screenshot 2023-05-07 at 11 19 42 PM" src="https://user-images.githubusercontent.com/69577585/236726494-e9f1a5eb-7eee-4cea-bead-959fb9131af5.png">
+<img width="1447" alt="Screenshot 2023-05-07 at 11 19 52 PM" src="https://user-images.githubusercontent.com/69577585/236726495-c1a293f9-cffd-4de0-a126-366d78283854.png">
